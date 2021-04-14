@@ -1,0 +1,3579 @@
+[
+    {
+        "datetime": "2021-04-14T17:15:00Z",
+        "home": {
+            "team": "Cardinals"
+        },
+        "away": {
+            "team": "Nationals"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Joe Ross",
+                "link": "/player/joe-ross-605452",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "0.00 ERA",
+                "so": "9 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {},
+                        "vs Righty": {},
+                        "vs Lefty": {},
+                        "home": {},
+                        "away": {}
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 16,
+                            "Hits": 2,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 9,
+                            "Hits": 2,
+                            "SO": 2,
+                            "BA Against": 0.222,
+                            "SLG Against": 0.222
+                        },
+                        "vs Lefty": {
+                            "At Bats": 7,
+                            "Hits": 0,
+                            "SO": 2,
+                            "BA Against": 0.0,
+                            "SLG against": 0.0
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 16,
+                            "Hits": 2,
+                            "SO": 4,
+                            "BA Against": 0.125,
+                            "SLG Against": 0.125
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Adam Wainwright",
+                "link": "/player/adam-wainwright-425794",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "7.11 ERA",
+                "so": "14 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 244,
+                            "Hits": 54,
+                            "Games": 10
+                        },
+                        "vs Righty": {
+                            "At Bats": 124,
+                            "Hits": 28,
+                            "SO": 32,
+                            "BA Against": 0.226,
+                            "SLG Against": 0.331
+                        },
+                        "vs Lefty": {
+                            "At Bats": 120,
+                            "Hits": 26,
+                            "SO": 22,
+                            "BA Against": 0.217,
+                            "SLG against": 0.408
+                        },
+                        "home": {
+                            "At Bats": 156,
+                            "Hits": 36,
+                            "SO": 29,
+                            "BA Against": 0.231,
+                            "SLG Against": 0.391
+                        },
+                        "away": {
+                            "At Bats": 88,
+                            "Hits": 18,
+                            "SO": 25,
+                            "BA Against": 0.205,
+                            "SLG Against": 0.33
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 35,
+                            "Hits": 12,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 16,
+                            "Hits": 5,
+                            "SO": 3,
+                            "BA Against": 0.313,
+                            "SLG Against": 0.375
+                        },
+                        "vs Lefty": {
+                            "At Bats": 19,
+                            "Hits": 7,
+                            "SO": 4,
+                            "BA Against": 0.368,
+                            "SLG against": 0.526
+                        },
+                        "home": {
+                            "At Bats": 20,
+                            "Hits": 5,
+                            "SO": 6,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.3
+                        },
+                        "away": {
+                            "At Bats": 15,
+                            "Hits": 7,
+                            "SO": 1,
+                            "BA Against": 0.467,
+                            "SLG Against": 0.667
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Trea Turner",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Juan Soto",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Ryan Zimmerman",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Kyle Schwarber",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Josh Harrison",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Starlin Castro",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Yan Gomes",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Joe Ross",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Victor Robles",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Tommy Edman",
+                    "bats": "S"
+                },
+                {
+                    "#": 2,
+                    "name": "Paul Goldschmidt",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Nolan Arenado",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Yadier Molina",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Matt Carpenter",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Justin Williams",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Lane Thomas",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Edmundo Sosa",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Adam Wainwright",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T17:40:00Z",
+        "home": {
+            "team": "Brewers"
+        },
+        "away": {
+            "team": "Cubs"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Jake Arrieta",
+                "link": "/player/jake-arrieta-453562",
+                "throws": "RHP",
+                "wins": "2",
+                "losses": "0",
+                "era": "3.18 ERA",
+                "so": "14 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 171,
+                            "Hits": 51,
+                            "Games": 9
+                        },
+                        "vs Righty": {
+                            "At Bats": 92,
+                            "Hits": 27,
+                            "SO": 17,
+                            "BA Against": 0.293,
+                            "SLG Against": 0.413
+                        },
+                        "vs Lefty": {
+                            "At Bats": 79,
+                            "Hits": 24,
+                            "SO": 15,
+                            "BA Against": 0.304,
+                            "SLG against": 0.506
+                        },
+                        "home": {
+                            "At Bats": 73,
+                            "Hits": 24,
+                            "SO": 14,
+                            "BA Against": 0.32899999999999996,
+                            "SLG Against": 0.397
+                        },
+                        "away": {
+                            "At Bats": 98,
+                            "Hits": 27,
+                            "SO": 18,
+                            "BA Against": 0.276,
+                            "SLG Against": 0.5
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 46,
+                            "Hits": 13,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 16,
+                            "Hits": 4,
+                            "SO": 1,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.25
+                        },
+                        "vs Lefty": {
+                            "At Bats": 30,
+                            "Hits": 9,
+                            "SO": 8,
+                            "BA Against": 0.3,
+                            "SLG against": 0.433
+                        },
+                        "home": {
+                            "At Bats": 23,
+                            "Hits": 6,
+                            "SO": 5,
+                            "BA Against": 0.261,
+                            "SLG Against": 0.348
+                        },
+                        "away": {
+                            "At Bats": 23,
+                            "Hits": 7,
+                            "SO": 4,
+                            "BA Against": 0.304,
+                            "SLG Against": 0.391
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Corbin Burnes",
+                "link": "/player/corbin-burnes-669203",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "0.49 ERA",
+                "so": "30 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 213,
+                            "Hits": 37,
+                            "Games": 12
+                        },
+                        "vs Righty": {
+                            "At Bats": 93,
+                            "Hits": 13,
+                            "SO": 40,
+                            "BA Against": 0.14,
+                            "SLG Against": 0.19399999999999998
+                        },
+                        "vs Lefty": {
+                            "At Bats": 120,
+                            "Hits": 24,
+                            "SO": 48,
+                            "BA Against": 0.2,
+                            "SLG against": 0.292
+                        },
+                        "home": {
+                            "At Bats": 91,
+                            "Hits": 16,
+                            "SO": 42,
+                            "BA Against": 0.17600000000000002,
+                            "SLG Against": 0.231
+                        },
+                        "away": {
+                            "At Bats": 122,
+                            "Hits": 21,
+                            "SO": 46,
+                            "BA Against": 0.172,
+                            "SLG Against": 0.262
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 39,
+                            "Hits": 2,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 21,
+                            "Hits": 1,
+                            "SO": 12,
+                            "BA Against": 0.048,
+                            "SLG Against": 0.19
+                        },
+                        "vs Lefty": {
+                            "At Bats": 18,
+                            "Hits": 1,
+                            "SO": 8,
+                            "BA Against": 0.055999999999999994,
+                            "SLG against": 0.16699999999999998
+                        },
+                        "home": {
+                            "At Bats": 20,
+                            "Hits": 1,
+                            "SO": 11,
+                            "BA Against": 0.05,
+                            "SLG Against": 0.2
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 1,
+                            "SO": 9,
+                            "BA Against": 0.053,
+                            "SLG Against": 0.158
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Ian Happ",
+                    "bats": "S"
+                },
+                {
+                    "#": 2,
+                    "name": "Eric Sogard",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Anthony Rizzo",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Joc Pederson",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Javier Baez",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Jason Heyward",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "David Bote",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Austin Romine",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Jake Arrieta",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Jackie Bradley Jr.",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Daniel Vogelbach",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Travis Shaw",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Avisail Garcia",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Omar Narvaez",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Keston Hiura",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Billy McKinney",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Luis Urias",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Corbin Burnes",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T18:10:00Z",
+        "home": {
+            "team": "Royals"
+        },
+        "away": {
+            "team": "Angels"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Griffin Canning",
+                "link": "/player/griffin-canning-656288",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "5.23 ERA",
+                "so": "12 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 210,
+                            "Hits": 54,
+                            "Games": 11
+                        },
+                        "vs Righty": {
+                            "At Bats": 115,
+                            "Hits": 32,
+                            "SO": 29,
+                            "BA Against": 0.278,
+                            "SLG Against": 0.461
+                        },
+                        "vs Lefty": {
+                            "At Bats": 95,
+                            "Hits": 22,
+                            "SO": 27,
+                            "BA Against": 0.23199999999999998,
+                            "SLG against": 0.42100000000000004
+                        },
+                        "home": {
+                            "At Bats": 123,
+                            "Hits": 32,
+                            "SO": 27,
+                            "BA Against": 0.26,
+                            "SLG Against": 0.46299999999999997
+                        },
+                        "away": {
+                            "At Bats": 87,
+                            "Hits": 22,
+                            "SO": 29,
+                            "BA Against": 0.253,
+                            "SLG Against": 0.414
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 19,
+                            "Hits": 3,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 15,
+                            "Hits": 2,
+                            "SO": 7,
+                            "BA Against": 0.133,
+                            "SLG Against": 0.33299999999999996
+                        },
+                        "vs Lefty": {
+                            "At Bats": 4,
+                            "Hits": 1,
+                            "SO": 0,
+                            "BA Against": 0.25,
+                            "SLG against": 1.0
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 3,
+                            "SO": 7,
+                            "BA Against": 0.158,
+                            "SLG Against": 0.474
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Brad Keller",
+                "link": "/player/brad-keller-641745",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "9.58 ERA",
+                "so": "8 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 193,
+                            "Hits": 39,
+                            "Games": 9
+                        },
+                        "vs Righty": {
+                            "At Bats": 76,
+                            "Hits": 14,
+                            "SO": 16,
+                            "BA Against": 0.184,
+                            "SLG Against": 0.21100000000000002
+                        },
+                        "vs Lefty": {
+                            "At Bats": 117,
+                            "Hits": 25,
+                            "SO": 19,
+                            "BA Against": 0.214,
+                            "SLG against": 0.265
+                        },
+                        "home": {
+                            "At Bats": 113,
+                            "Hits": 18,
+                            "SO": 23,
+                            "BA Against": 0.159,
+                            "SLG Against": 0.177
+                        },
+                        "away": {
+                            "At Bats": 80,
+                            "Hits": 21,
+                            "SO": 12,
+                            "BA Against": 0.263,
+                            "SLG Against": 0.33799999999999997
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 26,
+                            "Hits": 15,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 13,
+                            "Hits": 8,
+                            "SO": 1,
+                            "BA Against": 0.615,
+                            "SLG Against": 1.0
+                        },
+                        "vs Lefty": {
+                            "At Bats": 13,
+                            "Hits": 7,
+                            "SO": 2,
+                            "BA Against": 0.5379999999999999,
+                            "SLG against": 0.9229999999999999
+                        },
+                        "home": {
+                            "At Bats": 12,
+                            "Hits": 9,
+                            "SO": 0,
+                            "BA Against": 0.75,
+                            "SLG Against": 1.0
+                        },
+                        "away": {
+                            "At Bats": 14,
+                            "Hits": 6,
+                            "SO": 3,
+                            "BA Against": 0.429,
+                            "SLG Against": 0.929
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "David Fletcher",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Shohei Ohtani",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Mike Trout",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Jared Walsh",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Albert Pujols",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Jose Iglesias",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Jose Rojas",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Anthony Bemboom",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Jon Jay",
+                    "bats": "L"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Whit Merrifield",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Andrew Benintendi",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Salvador Perez",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Carlos Santana",
+                    "bats": "S"
+                },
+                {
+                    "#": 5,
+                    "name": "Jorge Soler",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Michael A. Taylor",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Hunter Dozier",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Cam Gallagher",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Nicky Lopez",
+                    "bats": "L"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T18:10:00Z",
+        "home": {
+            "team": "Twins"
+        },
+        "away": {
+            "team": "Red Sox"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Nathan Eovaldi",
+                "link": "/player/nathan-eovaldi-543135",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "1",
+                "era": "2.12 ERA",
+                "so": "14 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 187,
+                            "Hits": 51,
+                            "Games": 9
+                        },
+                        "vs Righty": {
+                            "At Bats": 93,
+                            "Hits": 33,
+                            "SO": 23,
+                            "BA Against": 0.355,
+                            "SLG Against": 0.581
+                        },
+                        "vs Lefty": {
+                            "At Bats": 94,
+                            "Hits": 18,
+                            "SO": 29,
+                            "BA Against": 0.191,
+                            "SLG against": 0.37200000000000005
+                        },
+                        "home": {
+                            "At Bats": 68,
+                            "Hits": 18,
+                            "SO": 22,
+                            "BA Against": 0.265,
+                            "SLG Against": 0.41200000000000003
+                        },
+                        "away": {
+                            "At Bats": 119,
+                            "Hits": 33,
+                            "SO": 30,
+                            "BA Against": 0.27699999999999997,
+                            "SLG Against": 0.513
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 41,
+                            "Hits": 7,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 21,
+                            "Hits": 3,
+                            "SO": 7,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.14300000000000002
+                        },
+                        "vs Lefty": {
+                            "At Bats": 20,
+                            "Hits": 4,
+                            "SO": 4,
+                            "BA Against": 0.2,
+                            "SLG against": 0.3
+                        },
+                        "home": {
+                            "At Bats": 41,
+                            "Hits": 7,
+                            "SO": 11,
+                            "BA Against": 0.171,
+                            "SLG Against": 0.22
+                        },
+                        "away": {}
+                    }
+                }
+            },
+            "home": {
+                "name": "Kenta Maeda",
+                "link": "/player/kenta-maeda-628317",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "2.45 ERA",
+                "so": "16 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 238,
+                            "Hits": 40,
+                            "Games": 11
+                        },
+                        "vs Righty": {
+                            "At Bats": 101,
+                            "Hits": 15,
+                            "SO": 39,
+                            "BA Against": 0.149,
+                            "SLG Against": 0.327
+                        },
+                        "vs Lefty": {
+                            "At Bats": 137,
+                            "Hits": 25,
+                            "SO": 41,
+                            "BA Against": 0.182,
+                            "SLG against": 0.292
+                        },
+                        "home": {
+                            "At Bats": 110,
+                            "Hits": 12,
+                            "SO": 42,
+                            "BA Against": 0.109,
+                            "SLG Against": 0.16399999999999998
+                        },
+                        "away": {
+                            "At Bats": 128,
+                            "Hits": 28,
+                            "SO": 38,
+                            "BA Against": 0.21899999999999997,
+                            "SLG Against": 0.43
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 42,
+                            "Hits": 13,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 17,
+                            "Hits": 5,
+                            "SO": 5,
+                            "BA Against": 0.294,
+                            "SLG Against": 0.529
+                        },
+                        "vs Lefty": {
+                            "At Bats": 25,
+                            "Hits": 8,
+                            "SO": 6,
+                            "BA Against": 0.32,
+                            "SLG against": 0.4
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 42,
+                            "Hits": 13,
+                            "SO": 11,
+                            "BA Against": 0.31,
+                            "SLG Against": 0.452
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Christian Arroyo",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Alex Verdugo",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "J.D. Martinez",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Xander Bogaerts",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Rafael Devers",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Marwin Gonzalez",
+                    "bats": "S"
+                },
+                {
+                    "#": 7,
+                    "name": "Hunter Renfroe",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Franchy Cordero",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Kevin Plawecki",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Luis Arraez",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Jorge Polanco",
+                    "bats": "S"
+                },
+                {
+                    "#": 3,
+                    "name": "Nelson Cruz",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Max Kepler",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Willians Astudillo",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Alex Kirilloff",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Jake Cave",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Ryan Jeffers",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "JT Riddle",
+                    "bats": "L"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T03:33:00Z",
+        "home": {
+            "team": "Twins"
+        },
+        "away": {
+            "team": "Red Sox"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Eduardo Rodriguez",
+                "link": "/player/eduardo-rodriguez-593958",
+                "throws": "LHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "5.40 ERA",
+                "so": "7 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {},
+                        "vs Righty": {},
+                        "vs Lefty": {},
+                        "home": {},
+                        "away": {}
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 20,
+                            "Hits": 4,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 15,
+                            "Hits": 3,
+                            "SO": 4,
+                            "BA Against": 0.2,
+                            "SLG Against": 0.6
+                        },
+                        "vs Lefty": {
+                            "At Bats": 5,
+                            "Hits": 1,
+                            "SO": 3,
+                            "BA Against": 0.2,
+                            "SLG against": 0.2
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 20,
+                            "Hits": 4,
+                            "SO": 7,
+                            "BA Against": 0.2,
+                            "SLG Against": 0.5
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Jose Berrios",
+                "link": "/player/jose-berrios-621244",
+                "throws": "RHP",
+                "wins": "2",
+                "losses": "0",
+                "era": "1.54 ERA",
+                "so": "20 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 240,
+                            "Hits": 57,
+                            "Games": 12
+                        },
+                        "vs Righty": {
+                            "At Bats": 129,
+                            "Hits": 37,
+                            "SO": 35,
+                            "BA Against": 0.287,
+                            "SLG Against": 0.364
+                        },
+                        "vs Lefty": {
+                            "At Bats": 111,
+                            "Hits": 20,
+                            "SO": 33,
+                            "BA Against": 0.18,
+                            "SLG against": 0.405
+                        },
+                        "home": {
+                            "At Bats": 115,
+                            "Hits": 21,
+                            "SO": 43,
+                            "BA Against": 0.183,
+                            "SLG Against": 0.322
+                        },
+                        "away": {
+                            "At Bats": 125,
+                            "Hits": 36,
+                            "SO": 25,
+                            "BA Against": 0.28800000000000003,
+                            "SLG Against": 0.44
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 38,
+                            "Hits": 5,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 17,
+                            "Hits": 4,
+                            "SO": 8,
+                            "BA Against": 0.235,
+                            "SLG Against": 0.235
+                        },
+                        "vs Lefty": {
+                            "At Bats": 21,
+                            "Hits": 1,
+                            "SO": 12,
+                            "BA Against": 0.048,
+                            "SLG against": 0.19
+                        },
+                        "home": {
+                            "At Bats": 20,
+                            "Hits": 5,
+                            "SO": 8,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.4
+                        },
+                        "away": {
+                            "At Bats": 18,
+                            "Hits": 0,
+                            "SO": 12,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [],
+            "home": []
+        }
+    },
+    {
+        "datetime": "2021-04-14T19:45:00Z",
+        "home": {
+            "team": "Giants"
+        },
+        "away": {
+            "team": "Reds"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Tyler Mahle",
+                "link": "/player/tyler-mahle-641816",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "1.74 ERA",
+                "so": "16 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 172,
+                            "Hits": 34,
+                            "Games": 10
+                        },
+                        "vs Righty": {
+                            "At Bats": 87,
+                            "Hits": 19,
+                            "SO": 35,
+                            "BA Against": 0.218,
+                            "SLG Against": 0.402
+                        },
+                        "vs Lefty": {
+                            "At Bats": 85,
+                            "Hits": 15,
+                            "SO": 25,
+                            "BA Against": 0.17600000000000002,
+                            "SLG against": 0.341
+                        },
+                        "home": {
+                            "At Bats": 113,
+                            "Hits": 19,
+                            "SO": 38,
+                            "BA Against": 0.168,
+                            "SLG Against": 0.345
+                        },
+                        "away": {
+                            "At Bats": 59,
+                            "Hits": 15,
+                            "SO": 22,
+                            "BA Against": 0.254,
+                            "SLG Against": 0.424
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 31,
+                            "Hits": 4,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 16,
+                            "Hits": 4,
+                            "SO": 8,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.625
+                        },
+                        "vs Lefty": {
+                            "At Bats": 15,
+                            "Hits": 0,
+                            "SO": 7,
+                            "BA Against": 0.0,
+                            "SLG against": 0.0
+                        },
+                        "home": {
+                            "At Bats": 19,
+                            "Hits": 4,
+                            "SO": 9,
+                            "BA Against": 0.21100000000000002,
+                            "SLG Against": 0.526
+                        },
+                        "away": {
+                            "At Bats": 12,
+                            "Hits": 0,
+                            "SO": 6,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Johnny Cueto",
+                "link": "/player/johnny-cueto-456501",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "2.20 ERA",
+                "so": "15 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 246,
+                            "Hits": 61,
+                            "Games": 12
+                        },
+                        "vs Righty": {
+                            "At Bats": 129,
+                            "Hits": 30,
+                            "SO": 28,
+                            "BA Against": 0.233,
+                            "SLG Against": 0.41100000000000003
+                        },
+                        "vs Lefty": {
+                            "At Bats": 117,
+                            "Hits": 31,
+                            "SO": 28,
+                            "BA Against": 0.265,
+                            "SLG against": 0.436
+                        },
+                        "home": {
+                            "At Bats": 145,
+                            "Hits": 39,
+                            "SO": 38,
+                            "BA Against": 0.26899999999999996,
+                            "SLG Against": 0.462
+                        },
+                        "away": {
+                            "At Bats": 101,
+                            "Hits": 22,
+                            "SO": 18,
+                            "BA Against": 0.218,
+                            "SLG Against": 0.366
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 49,
+                            "Hits": 10,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 26,
+                            "Hits": 6,
+                            "SO": 8,
+                            "BA Against": 0.231,
+                            "SLG Against": 0.385
+                        },
+                        "vs Lefty": {
+                            "At Bats": 23,
+                            "Hits": 4,
+                            "SO": 6,
+                            "BA Against": 0.174,
+                            "SLG against": 0.217
+                        },
+                        "home": {
+                            "At Bats": 28,
+                            "Hits": 4,
+                            "SO": 7,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.214
+                        },
+                        "away": {
+                            "At Bats": 21,
+                            "Hits": 6,
+                            "SO": 7,
+                            "BA Against": 0.28600000000000003,
+                            "SLG Against": 0.429
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Jesse Winker",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Nick Castellanos",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Joey Votto",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Eugenio Suarez",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Mike Moustakas",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Tyler Naquin",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Jonathan India",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Tyler Stephenson",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Tyler Mahle",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Tommy La Stella",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Mike Yastrzemski",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Alex Dickerson",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Brandon Belt",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Donovan Solano",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Brandon Crawford",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Austin Slater",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Curt Casali",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Johnny Cueto",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T22:35:00Z",
+        "home": {
+            "team": "Pirates"
+        },
+        "away": {
+            "team": "Padres"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Joe Musgrove",
+                "link": "/player/joe-musgrove-605397",
+                "throws": "RHP",
+                "wins": "2",
+                "losses": "0",
+                "era": "0.00 ERA",
+                "so": "18 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 146,
+                            "Hits": 33,
+                            "Games": 8
+                        },
+                        "vs Righty": {
+                            "At Bats": 64,
+                            "Hits": 18,
+                            "SO": 24,
+                            "BA Against": 0.281,
+                            "SLG Against": 0.45299999999999996
+                        },
+                        "vs Lefty": {
+                            "At Bats": 82,
+                            "Hits": 15,
+                            "SO": 31,
+                            "BA Against": 0.183,
+                            "SLG against": 0.366
+                        },
+                        "home": {
+                            "At Bats": 68,
+                            "Hits": 13,
+                            "SO": 28,
+                            "BA Against": 0.191,
+                            "SLG Against": 0.368
+                        },
+                        "away": {
+                            "At Bats": 78,
+                            "Hits": 20,
+                            "SO": 27,
+                            "BA Against": 0.256,
+                            "SLG Against": 0.436
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 48,
+                            "Hits": 3,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 17,
+                            "Hits": 0,
+                            "SO": 7,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        },
+                        "vs Lefty": {
+                            "At Bats": 31,
+                            "Hits": 3,
+                            "SO": 11,
+                            "BA Against": 0.09699999999999999,
+                            "SLG against": 0.09699999999999999
+                        },
+                        "home": {
+                            "At Bats": 21,
+                            "Hits": 3,
+                            "SO": 8,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.14300000000000002
+                        },
+                        "away": {
+                            "At Bats": 27,
+                            "Hits": 0,
+                            "SO": 10,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Tyler Anderson",
+                "link": "/player/tyler-anderson-542881",
+                "throws": "LHP",
+                "wins": "0",
+                "losses": "2",
+                "era": "5.23 ERA",
+                "so": "12 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 227,
+                            "Hits": 58,
+                            "Games": 13
+                        },
+                        "vs Righty": {
+                            "At Bats": 159,
+                            "Hits": 37,
+                            "SO": 28,
+                            "BA Against": 0.233,
+                            "SLG Against": 0.371
+                        },
+                        "vs Lefty": {
+                            "At Bats": 68,
+                            "Hits": 21,
+                            "SO": 13,
+                            "BA Against": 0.309,
+                            "SLG against": 0.5
+                        },
+                        "home": {
+                            "At Bats": 121,
+                            "Hits": 27,
+                            "SO": 21,
+                            "BA Against": 0.223,
+                            "SLG Against": 0.34700000000000003
+                        },
+                        "away": {
+                            "At Bats": 106,
+                            "Hits": 31,
+                            "SO": 20,
+                            "BA Against": 0.292,
+                            "SLG Against": 0.48100000000000004
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 43,
+                            "Hits": 15,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 27,
+                            "Hits": 10,
+                            "SO": 10,
+                            "BA Against": 0.37,
+                            "SLG Against": 0.741
+                        },
+                        "vs Lefty": {
+                            "At Bats": 16,
+                            "Hits": 5,
+                            "SO": 2,
+                            "BA Against": 0.313,
+                            "SLG against": 0.313
+                        },
+                        "home": {
+                            "At Bats": 23,
+                            "Hits": 10,
+                            "SO": 5,
+                            "BA Against": 0.435,
+                            "SLG Against": 0.7390000000000001
+                        },
+                        "away": {
+                            "At Bats": 20,
+                            "Hits": 5,
+                            "SO": 7,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.4
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Trent Grisham",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Manny Machado",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Eric Hosmer",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Tommy Pham",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Jurickson Profar",
+                    "bats": "S"
+                },
+                {
+                    "#": 6,
+                    "name": "Jake Cronenworth",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Ha-Seong Kim",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Victor Caratini",
+                    "bats": "S"
+                },
+                {
+                    "#": 9,
+                    "name": "Joe Musgrove",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Adam Frazier",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Phillip Evans",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Bryan Reynolds",
+                    "bats": "S"
+                },
+                {
+                    "#": 4,
+                    "name": "Colin Moran",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Kevin Newman",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Gregory Polanco",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Dustin Fowler",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Michael Perez",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Tyler Anderson",
+                    "bats": "L"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T23:05:00Z",
+        "home": {
+            "team": "Orioles"
+        },
+        "away": {
+            "team": "Mariners"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Justin Dunn",
+                "link": "/player/justin-dunn-643290",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "5.79 ERA",
+                "so": "3 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 164,
+                            "Hits": 31,
+                            "Games": 10
+                        },
+                        "vs Righty": {
+                            "At Bats": 81,
+                            "Hits": 15,
+                            "SO": 14,
+                            "BA Against": 0.185,
+                            "SLG Against": 0.358
+                        },
+                        "vs Lefty": {
+                            "At Bats": 83,
+                            "Hits": 16,
+                            "SO": 24,
+                            "BA Against": 0.193,
+                            "SLG against": 0.45799999999999996
+                        },
+                        "home": {
+                            "At Bats": 54,
+                            "Hits": 8,
+                            "SO": 14,
+                            "BA Against": 0.14800000000000002,
+                            "SLG Against": 0.389
+                        },
+                        "away": {
+                            "At Bats": 110,
+                            "Hits": 23,
+                            "SO": 24,
+                            "BA Against": 0.209,
+                            "SLG Against": 0.418
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 14,
+                            "Hits": 1,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 7,
+                            "Hits": 1,
+                            "SO": 1,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.28600000000000003
+                        },
+                        "vs Lefty": {
+                            "At Bats": 7,
+                            "Hits": 0,
+                            "SO": 2,
+                            "BA Against": 0.0,
+                            "SLG against": 0.0
+                        },
+                        "home": {
+                            "At Bats": 14,
+                            "Hits": 1,
+                            "SO": 3,
+                            "BA Against": 0.071,
+                            "SLG Against": 0.14300000000000002
+                        },
+                        "away": {}
+                    }
+                }
+            },
+            "home": {
+                "name": "Matt Harvey",
+                "link": "/player/matt-harvey-518774",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "5.59 ERA",
+                "so": "9 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 60,
+                            "Hits": 27,
+                            "Games": 7
+                        },
+                        "vs Righty": {
+                            "At Bats": 26,
+                            "Hits": 11,
+                            "SO": 6,
+                            "BA Against": 0.423,
+                            "SLG Against": 0.8079999999999999
+                        },
+                        "vs Lefty": {
+                            "At Bats": 34,
+                            "Hits": 16,
+                            "SO": 4,
+                            "BA Against": 0.47100000000000003,
+                            "SLG against": 0.8240000000000001
+                        },
+                        "home": {
+                            "At Bats": 38,
+                            "Hits": 17,
+                            "SO": 6,
+                            "BA Against": 0.447,
+                            "SLG Against": 0.868
+                        },
+                        "away": {
+                            "At Bats": 22,
+                            "Hits": 10,
+                            "SO": 4,
+                            "BA Against": 0.455,
+                            "SLG Against": 0.727
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 41,
+                            "Hits": 13,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 24,
+                            "Hits": 9,
+                            "SO": 6,
+                            "BA Against": 0.375,
+                            "SLG Against": 0.5
+                        },
+                        "vs Lefty": {
+                            "At Bats": 17,
+                            "Hits": 4,
+                            "SO": 3,
+                            "BA Against": 0.235,
+                            "SLG against": 0.47100000000000003
+                        },
+                        "home": {
+                            "At Bats": 22,
+                            "Hits": 7,
+                            "SO": 5,
+                            "BA Against": 0.318,
+                            "SLG Against": 0.591
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 6,
+                            "SO": 4,
+                            "BA Against": 0.316,
+                            "SLG Against": 0.368
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Mitch Haniger",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Ty France",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Kyle Seager",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Jose Marmolejos",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Luis Torrens",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Taylor Trammell",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Evan White",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Dylan Moore",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "J.P. Crawford",
+                    "bats": "L"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Cedric Mullins",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "DJ Stewart",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Anthony Santander",
+                    "bats": "S"
+                },
+                {
+                    "#": 4,
+                    "name": "Maikel Franco",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Rio Ruiz",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Ryan Mountcastle",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Chance Sisco",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Freddy Galvis",
+                    "bats": "S"
+                },
+                {
+                    "#": 9,
+                    "name": "Ramon Urias",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T23:10:00Z",
+        "home": {
+            "team": "Astros"
+        },
+        "away": {
+            "team": "Tigers"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Michael Fulmer",
+                "link": "/player/michael-fulmer-605242",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "2.57 ERA",
+                "so": "10 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 120,
+                            "Hits": 45,
+                            "Games": 10
+                        },
+                        "vs Righty": {
+                            "At Bats": 54,
+                            "Hits": 28,
+                            "SO": 5,
+                            "BA Against": 0.519,
+                            "SLG Against": 0.9259999999999999
+                        },
+                        "vs Lefty": {
+                            "At Bats": 66,
+                            "Hits": 17,
+                            "SO": 15,
+                            "BA Against": 0.258,
+                            "SLG against": 0.364
+                        },
+                        "home": {
+                            "At Bats": 56,
+                            "Hits": 17,
+                            "SO": 9,
+                            "BA Against": 0.304,
+                            "SLG Against": 0.589
+                        },
+                        "away": {
+                            "At Bats": 64,
+                            "Hits": 28,
+                            "SO": 11,
+                            "BA Against": 0.43799999999999994,
+                            "SLG Against": 0.6409999999999999
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 25,
+                            "Hits": 4,
+                            "Games": 3
+                        },
+                        "vs Righty": {
+                            "At Bats": 11,
+                            "Hits": 2,
+                            "SO": 4,
+                            "BA Against": 0.182,
+                            "SLG Against": 0.727
+                        },
+                        "vs Lefty": {
+                            "At Bats": 14,
+                            "Hits": 2,
+                            "SO": 6,
+                            "BA Against": 0.14300000000000002,
+                            "SLG against": 0.214
+                        },
+                        "home": {
+                            "At Bats": 11,
+                            "Hits": 2,
+                            "SO": 5,
+                            "BA Against": 0.182,
+                            "SLG Against": 0.545
+                        },
+                        "away": {
+                            "At Bats": 14,
+                            "Hits": 2,
+                            "SO": 5,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.35700000000000004
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Lance McCullers Jr.",
+                "link": "/player/lance-mccullers-jr-621121",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "1.80 ERA",
+                "so": "13 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 200,
+                            "Hits": 44,
+                            "Games": 11
+                        },
+                        "vs Righty": {
+                            "At Bats": 95,
+                            "Hits": 24,
+                            "SO": 22,
+                            "BA Against": 0.253,
+                            "SLG Against": 0.42100000000000004
+                        },
+                        "vs Lefty": {
+                            "At Bats": 105,
+                            "Hits": 20,
+                            "SO": 34,
+                            "BA Against": 0.19,
+                            "SLG against": 0.39
+                        },
+                        "home": {
+                            "At Bats": 107,
+                            "Hits": 17,
+                            "SO": 33,
+                            "BA Against": 0.159,
+                            "SLG Against": 0.271
+                        },
+                        "away": {
+                            "At Bats": 93,
+                            "Hits": 27,
+                            "SO": 23,
+                            "BA Against": 0.29,
+                            "SLG Against": 0.5589999999999999
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 34,
+                            "Hits": 4,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 22,
+                            "Hits": 0,
+                            "SO": 9,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        },
+                        "vs Lefty": {
+                            "At Bats": 12,
+                            "Hits": 4,
+                            "SO": 4,
+                            "BA Against": 0.33299999999999996,
+                            "SLG against": 0.583
+                        },
+                        "home": {
+                            "At Bats": 17,
+                            "Hits": 2,
+                            "SO": 6,
+                            "BA Against": 0.11800000000000001,
+                            "SLG Against": 0.294
+                        },
+                        "away": {
+                            "At Bats": 17,
+                            "Hits": 2,
+                            "SO": 7,
+                            "BA Against": 0.11800000000000001,
+                            "SLG Against": 0.11800000000000001
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Robbie Grossman",
+                    "bats": "S"
+                },
+                {
+                    "#": 2,
+                    "name": "Jeimer Candelario",
+                    "bats": "S"
+                },
+                {
+                    "#": 3,
+                    "name": "Wilson Ramos",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Nomar Mazara",
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Renato Nunez",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Jonathan Schoop",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Akil Baddoo",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Niko Goodrum",
+                    "bats": "S"
+                },
+                {
+                    "#": 9,
+                    "name": "Harold Castro",
+                    "bats": "L"
+                }
+            ],
+            "home": []
+        }
+    },
+    {
+        "datetime": "2021-04-14T23:10:00Z",
+        "home": {
+            "team": "Rays"
+        },
+        "away": {
+            "team": "Rangers"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Kohei Arihara",
+                "link": "/player/kohei-arihara-685503",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "5.00 ERA",
+                "so": "2 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {},
+                        "vs Righty": {
+                            "At Bats": 18,
+                            "Hits": 7,
+                            "SO": 0,
+                            "BA Against": 0.389,
+                            "SLG Against": 0.833
+                        },
+                        "vs Lefty": {
+                            "At Bats": 17,
+                            "Hits": 4,
+                            "SO": 2,
+                            "BA Against": 0.235,
+                            "SLG against": 0.41200000000000003
+                        },
+                        "home": {
+                            "At Bats": 16,
+                            "Hits": 5,
+                            "SO": 1,
+                            "BA Against": 0.313,
+                            "SLG Against": 0.5
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 6,
+                            "SO": 1,
+                            "BA Against": 0.316,
+                            "SLG Against": 0.737
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 35,
+                            "Hits": 11,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 18,
+                            "Hits": 7,
+                            "SO": 0,
+                            "BA Against": 0.389,
+                            "SLG Against": 0.833
+                        },
+                        "vs Lefty": {
+                            "At Bats": 17,
+                            "Hits": 4,
+                            "SO": 2,
+                            "BA Against": 0.235,
+                            "SLG against": 0.41200000000000003
+                        },
+                        "home": {
+                            "At Bats": 16,
+                            "Hits": 5,
+                            "SO": 1,
+                            "BA Against": 0.313,
+                            "SLG Against": 0.5
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 6,
+                            "SO": 1,
+                            "BA Against": 0.316,
+                            "SLG Against": 0.737
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Josh Fleming",
+                "link": "/player/josh-fleming-676596",
+                "throws": "LHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "-.-- ERA",
+                "so": "0 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 122,
+                            "Hits": 28,
+                            "Games": 7
+                        },
+                        "vs Righty": {
+                            "At Bats": 85,
+                            "Hits": 18,
+                            "SO": 17,
+                            "BA Against": 0.212,
+                            "SLG Against": 0.376
+                        },
+                        "vs Lefty": {
+                            "At Bats": 37,
+                            "Hits": 10,
+                            "SO": 8,
+                            "BA Against": 0.27,
+                            "SLG against": 0.43200000000000005
+                        },
+                        "home": {
+                            "At Bats": 92,
+                            "Hits": 22,
+                            "SO": 17,
+                            "BA Against": 0.239,
+                            "SLG Against": 0.446
+                        },
+                        "away": {
+                            "At Bats": 30,
+                            "Hits": 6,
+                            "SO": 8,
+                            "BA Against": 0.2,
+                            "SLG Against": 0.233
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {},
+                        "vs Righty": {
+                            "At Bats": 85,
+                            "Hits": 18,
+                            "SO": 17,
+                            "BA Against": 0.212,
+                            "SLG Against": 0.376
+                        },
+                        "vs Lefty": {
+                            "At Bats": 37,
+                            "Hits": 10,
+                            "SO": 8,
+                            "BA Against": 0.27,
+                            "SLG against": 0.43200000000000005
+                        },
+                        "home": {
+                            "At Bats": 92,
+                            "Hits": 22,
+                            "SO": 17,
+                            "BA Against": 0.239,
+                            "SLG Against": 0.446
+                        },
+                        "away": {
+                            "At Bats": 30,
+                            "Hits": 6,
+                            "SO": 8,
+                            "BA Against": 0.2,
+                            "SLG Against": 0.233
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Isiah Kiner-Falefa",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "David Dahl",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Joey Gallo",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Adolis Garcia",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Nate Lowe",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Nick Solak",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Jonah Heim",
+                    "bats": "S"
+                },
+                {
+                    "#": 8,
+                    "name": "Charlie Culberson",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Leody Taveras",
+                    "bats": "S"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Austin Meadows",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Randy Arozarena",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Brandon Lowe",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Yandy Diaz",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Joey Wendle",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Manuel Margot",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Yoshi Tsutsugo",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Mike Zunino",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Willy Adames",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T23:10:00Z",
+        "home": {
+            "team": "Mets"
+        },
+        "away": {
+            "team": "Phillies"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Zack Wheeler",
+                "link": "/player/zack-wheeler-554430",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "1",
+                "era": "2.31 ERA",
+                "so": "14 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 264,
+                            "Hits": 67,
+                            "Games": 11
+                        },
+                        "vs Righty": {
+                            "At Bats": 128,
+                            "Hits": 33,
+                            "SO": 27,
+                            "BA Against": 0.258,
+                            "SLG Against": 0.359
+                        },
+                        "vs Lefty": {
+                            "At Bats": 136,
+                            "Hits": 34,
+                            "SO": 26,
+                            "BA Against": 0.25,
+                            "SLG against": 0.33799999999999997
+                        },
+                        "home": {
+                            "At Bats": 164,
+                            "Hits": 42,
+                            "SO": 23,
+                            "BA Against": 0.256,
+                            "SLG Against": 0.348
+                        },
+                        "away": {
+                            "At Bats": 100,
+                            "Hits": 25,
+                            "SO": 30,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.35
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 41,
+                            "Hits": 8,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 29,
+                            "Hits": 7,
+                            "SO": 12,
+                            "BA Against": 0.24100000000000002,
+                            "SLG Against": 0.379
+                        },
+                        "vs Lefty": {
+                            "At Bats": 12,
+                            "Hits": 1,
+                            "SO": 2,
+                            "BA Against": 0.083,
+                            "SLG against": 0.16699999999999998
+                        },
+                        "home": {
+                            "At Bats": 22,
+                            "Hits": 1,
+                            "SO": 10,
+                            "BA Against": 0.045,
+                            "SLG Against": 0.045
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 7,
+                            "SO": 4,
+                            "BA Against": 0.368,
+                            "SLG Against": 0.632
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "David Peterson",
+                "link": "/player/david-peterson-656849",
+                "throws": "LHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "13.50 ERA",
+                "so": "5 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 178,
+                            "Hits": 36,
+                            "Games": 10
+                        },
+                        "vs Righty": {
+                            "At Bats": 147,
+                            "Hits": 31,
+                            "SO": 30,
+                            "BA Against": 0.21100000000000002,
+                            "SLG Against": 0.361
+                        },
+                        "vs Lefty": {
+                            "At Bats": 31,
+                            "Hits": 5,
+                            "SO": 10,
+                            "BA Against": 0.161,
+                            "SLG against": 0.226
+                        },
+                        "home": {
+                            "At Bats": 64,
+                            "Hits": 11,
+                            "SO": 19,
+                            "BA Against": 0.172,
+                            "SLG Against": 0.359
+                        },
+                        "away": {
+                            "At Bats": 114,
+                            "Hits": 25,
+                            "SO": 21,
+                            "BA Against": 0.21899999999999997,
+                            "SLG Against": 0.325
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 18,
+                            "Hits": 7,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 11,
+                            "Hits": 4,
+                            "SO": 3,
+                            "BA Against": 0.364,
+                            "SLG Against": 1.091
+                        },
+                        "vs Lefty": {
+                            "At Bats": 7,
+                            "Hits": 3,
+                            "SO": 2,
+                            "BA Against": 0.429,
+                            "SLG against": 0.5710000000000001
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 18,
+                            "Hits": 7,
+                            "SO": 5,
+                            "BA Against": 0.389,
+                            "SLG Against": 0.889
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Andrew McCutchen",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Rhys Hoskins",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Bryce Harper",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "J.T. Realmuto",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Alec Bohm",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Jean Segura",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Ronald Torreyes",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Roman Quinn",
+                    "bats": "S"
+                },
+                {
+                    "#": 9,
+                    "name": "Zack Wheeler",
+                    "bats": "L"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Brandon Nimmo",
+                    "bats": "L"
+                },
+                {
+                    "#": 2,
+                    "name": "Francisco Lindor",
+                    "bats": "S"
+                },
+                {
+                    "#": 3,
+                    "name": "Dominic Smith",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Pete Alonso",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Jeff McNeil",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Michael Conforto",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "James McCann",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Luis Guillorme",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "David Peterson",
+                    "bats": "L"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-14T23:20:00Z",
+        "home": {
+            "team": "Braves"
+        },
+        "away": {
+            "team": "Marlins"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Nick Neidert",
+                "link": "/player/nick-neidert-663734",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "0",
+                "era": "2.08 ERA",
+                "so": "3 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 32,
+                            "Hits": 10,
+                            "Games": 4
+                        },
+                        "vs Righty": {
+                            "At Bats": 22,
+                            "Hits": 6,
+                            "SO": 2,
+                            "BA Against": 0.273,
+                            "SLG Against": 0.455
+                        },
+                        "vs Lefty": {
+                            "At Bats": 10,
+                            "Hits": 4,
+                            "SO": 2,
+                            "BA Against": 0.4,
+                            "SLG against": 0.6
+                        },
+                        "home": {
+                            "At Bats": 19,
+                            "Hits": 8,
+                            "SO": 3,
+                            "BA Against": 0.42100000000000004,
+                            "SLG Against": 0.737
+                        },
+                        "away": {
+                            "At Bats": 13,
+                            "Hits": 2,
+                            "SO": 1,
+                            "BA Against": 0.154,
+                            "SLG Against": 0.154
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 15,
+                            "Hits": 3,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 4,
+                            "Hits": 0,
+                            "SO": 1,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        },
+                        "vs Lefty": {
+                            "At Bats": 11,
+                            "Hits": 3,
+                            "SO": 2,
+                            "BA Against": 0.273,
+                            "SLG against": 0.364
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 15,
+                            "Hits": 3,
+                            "SO": 3,
+                            "BA Against": 0.2,
+                            "SLG Against": 0.267
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Charlie Morton",
+                "link": "/player/charlie-morton-450203",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "1",
+                "era": "3.27 ERA",
+                "so": "12 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 154,
+                            "Hits": 43,
+                            "Games": 9
+                        },
+                        "vs Righty": {
+                            "At Bats": 92,
+                            "Hits": 28,
+                            "SO": 21,
+                            "BA Against": 0.304,
+                            "SLG Against": 0.413
+                        },
+                        "vs Lefty": {
+                            "At Bats": 62,
+                            "Hits": 15,
+                            "SO": 21,
+                            "BA Against": 0.242,
+                            "SLG against": 0.452
+                        },
+                        "home": {
+                            "At Bats": 88,
+                            "Hits": 28,
+                            "SO": 22,
+                            "BA Against": 0.318,
+                            "SLG Against": 0.5
+                        },
+                        "away": {
+                            "At Bats": 66,
+                            "Hits": 15,
+                            "SO": 20,
+                            "BA Against": 0.22699999999999998,
+                            "SLG Against": 0.33299999999999996
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 41,
+                            "Hits": 10,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 26,
+                            "Hits": 7,
+                            "SO": 7,
+                            "BA Against": 0.26899999999999996,
+                            "SLG Against": 0.308
+                        },
+                        "vs Lefty": {
+                            "At Bats": 15,
+                            "Hits": 3,
+                            "SO": 5,
+                            "BA Against": 0.2,
+                            "SLG against": 0.2
+                        },
+                        "home": {
+                            "At Bats": 22,
+                            "Hits": 4,
+                            "SO": 7,
+                            "BA Against": 0.182,
+                            "SLG Against": 0.182
+                        },
+                        "away": {
+                            "At Bats": 19,
+                            "Hits": 6,
+                            "SO": 5,
+                            "BA Against": 0.316,
+                            "SLG Against": 0.368
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Ronald Acuna Jr.",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Freddie Freeman",
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Marcell Ozuna",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Travis d'Arnaud",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Ozzie Albies",
+                    "bats": "S"
+                },
+                {
+                    "#": 6,
+                    "name": "Dansby Swanson",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Austin Riley",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Ender Inciarte",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Charlie Morton",
+                    "bats": "R"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2021-04-15T00:10:00Z",
+        "home": {
+            "team": "White Sox"
+        },
+        "away": {
+            "team": "Indians"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Zach Plesac",
+                "link": "/player/zach-plesac-668676",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "1",
+                "era": "1.38 ERA",
+                "so": "10 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 199,
+                            "Hits": 38,
+                            "Games": 8
+                        },
+                        "vs Righty": {
+                            "At Bats": 111,
+                            "Hits": 20,
+                            "SO": 33,
+                            "BA Against": 0.18,
+                            "SLG Against": 0.324
+                        },
+                        "vs Lefty": {
+                            "At Bats": 88,
+                            "Hits": 18,
+                            "SO": 24,
+                            "BA Against": 0.205,
+                            "SLG against": 0.375
+                        },
+                        "home": {
+                            "At Bats": 77,
+                            "Hits": 14,
+                            "SO": 22,
+                            "BA Against": 0.182,
+                            "SLG Against": 0.312
+                        },
+                        "away": {
+                            "At Bats": 122,
+                            "Hits": 24,
+                            "SO": 35,
+                            "BA Against": 0.19699999999999998,
+                            "SLG Against": 0.369
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 46,
+                            "Hits": 9,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 20,
+                            "Hits": 2,
+                            "SO": 3,
+                            "BA Against": 0.1,
+                            "SLG Against": 0.1
+                        },
+                        "vs Lefty": {
+                            "At Bats": 26,
+                            "Hits": 7,
+                            "SO": 7,
+                            "BA Against": 0.26899999999999996,
+                            "SLG against": 0.34600000000000003
+                        },
+                        "home": {
+                            "At Bats": 23,
+                            "Hits": 3,
+                            "SO": 6,
+                            "BA Against": 0.13,
+                            "SLG Against": 0.13
+                        },
+                        "away": {
+                            "At Bats": 23,
+                            "Hits": 6,
+                            "SO": 4,
+                            "BA Against": 0.261,
+                            "SLG Against": 0.348
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Carlos Rodon",
+                "link": "/player/carlos-rodon-607074",
+                "throws": "LHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "0.00 ERA",
+                "so": "9 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 31,
+                            "Hits": 9,
+                            "Games": 4
+                        },
+                        "vs Righty": {
+                            "At Bats": 28,
+                            "Hits": 8,
+                            "SO": 6,
+                            "BA Against": 0.28600000000000003,
+                            "SLG Against": 0.536
+                        },
+                        "vs Lefty": {
+                            "At Bats": 3,
+                            "Hits": 1,
+                            "SO": 0,
+                            "BA Against": 0.33299999999999996,
+                            "SLG against": 0.667
+                        },
+                        "home": {
+                            "At Bats": 5,
+                            "Hits": 0,
+                            "SO": 1,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        },
+                        "away": {
+                            "At Bats": 26,
+                            "Hits": 9,
+                            "SO": 5,
+                            "BA Against": 0.34600000000000003,
+                            "SLG Against": 0.654
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 17,
+                            "Hits": 2,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 11,
+                            "Hits": 1,
+                            "SO": 5,
+                            "BA Against": 0.091,
+                            "SLG Against": 0.182
+                        },
+                        "vs Lefty": {
+                            "At Bats": 6,
+                            "Hits": 1,
+                            "SO": 4,
+                            "BA Against": 0.16699999999999998,
+                            "SLG against": 0.16699999999999998
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 17,
+                            "Hits": 2,
+                            "SO": 9,
+                            "BA Against": 0.11800000000000001,
+                            "SLG Against": 0.17600000000000002
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Jordan Luplow",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Cesar Hernandez",
+                    "bats": "S"
+                },
+                {
+                    "#": 3,
+                    "name": "Jose Ramirez",
+                    "bats": "S"
+                },
+                {
+                    "#": 4,
+                    "name": "Franmil Reyes",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Eddie Rosario",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Amed Rosario",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Josh Naylor",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Roberto Perez",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Yu Chang",
+                    "bats": "R"
+                }
+            ],
+            "home": []
+        }
+    },
+    {
+        "datetime": "2021-04-15T02:10:00Z",
+        "home": {
+            "team": "Dodgers"
+        },
+        "away": {
+            "team": "Rockies"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Jon Gray",
+                "link": "/player/jon-gray-592351",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "1.54 ERA",
+                "so": "12 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 160,
+                            "Hits": 45,
+                            "Games": 8
+                        },
+                        "vs Righty": {
+                            "At Bats": 62,
+                            "Hits": 19,
+                            "SO": 8,
+                            "BA Against": 0.306,
+                            "SLG Against": 0.40299999999999997
+                        },
+                        "vs Lefty": {
+                            "At Bats": 98,
+                            "Hits": 26,
+                            "SO": 14,
+                            "BA Against": 0.265,
+                            "SLG against": 0.531
+                        },
+                        "home": {
+                            "At Bats": 107,
+                            "Hits": 32,
+                            "SO": 14,
+                            "BA Against": 0.299,
+                            "SLG Against": 0.542
+                        },
+                        "away": {
+                            "At Bats": 53,
+                            "Hits": 13,
+                            "SO": 8,
+                            "BA Against": 0.245,
+                            "SLG Against": 0.358
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 40,
+                            "Hits": 6,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 15,
+                            "Hits": 1,
+                            "SO": 8,
+                            "BA Against": 0.067,
+                            "SLG Against": 0.067
+                        },
+                        "vs Lefty": {
+                            "At Bats": 25,
+                            "Hits": 5,
+                            "SO": 4,
+                            "BA Against": 0.2,
+                            "SLG against": 0.32
+                        },
+                        "home": {
+                            "At Bats": 40,
+                            "Hits": 6,
+                            "SO": 12,
+                            "BA Against": 0.15,
+                            "SLG Against": 0.225
+                        },
+                        "away": {}
+                    }
+                }
+            },
+            "home": {
+                "name": "Dustin May",
+                "link": "/player/dustin-may-669160",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "0.00 ERA",
+                "so": "8 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 205,
+                            "Hits": 45,
+                            "Games": 12
+                        },
+                        "vs Righty": {
+                            "At Bats": 106,
+                            "Hits": 21,
+                            "SO": 24,
+                            "BA Against": 0.198,
+                            "SLG Against": 0.302
+                        },
+                        "vs Lefty": {
+                            "At Bats": 99,
+                            "Hits": 24,
+                            "SO": 20,
+                            "BA Against": 0.242,
+                            "SLG against": 0.444
+                        },
+                        "home": {
+                            "At Bats": 107,
+                            "Hits": 22,
+                            "SO": 22,
+                            "BA Against": 0.20600000000000002,
+                            "SLG Against": 0.355
+                        },
+                        "away": {
+                            "At Bats": 98,
+                            "Hits": 23,
+                            "SO": 22,
+                            "BA Against": 0.235,
+                            "SLG Against": 0.38799999999999996
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 21,
+                            "Hits": 2,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 10,
+                            "Hits": 1,
+                            "SO": 2,
+                            "BA Against": 0.1,
+                            "SLG Against": 0.1
+                        },
+                        "vs Lefty": {
+                            "At Bats": 11,
+                            "Hits": 1,
+                            "SO": 6,
+                            "BA Against": 0.091,
+                            "SLG against": 0.091
+                        },
+                        "home": {},
+                        "away": {
+                            "At Bats": 21,
+                            "Hits": 2,
+                            "SO": 8,
+                            "BA Against": 0.095,
+                            "SLG Against": 0.095
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [],
+            "home": []
+        }
+    },
+    {
+        "datetime": "2021-04-14T17:07:00Z",
+        "home": {
+            "team": "Blue Jays"
+        },
+        "away": {
+            "team": "Yankees"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Corey Kluber",
+                "link": "/player/corey-kluber-446372",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "6.10 ERA",
+                "so": "12 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 2,
+                            "Hits": 0,
+                            "Games": 1
+                        },
+                        "vs Righty": {
+                            "At Bats": 0,
+                            "Hits": 0,
+                            "SO": 0,
+                            "BA Against": NaN,
+                            "SLG Against": NaN
+                        },
+                        "vs Lefty": {
+                            "At Bats": 2,
+                            "Hits": 0,
+                            "SO": 1,
+                            "BA Against": 0.0,
+                            "SLG against": 0.0
+                        },
+                        "home": {
+                            "At Bats": 2,
+                            "Hits": 0,
+                            "SO": 1,
+                            "BA Against": 0.0,
+                            "SLG Against": 0.0
+                        },
+                        "away": {}
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 26,
+                            "Hits": 10,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 16,
+                            "Hits": 6,
+                            "SO": 3,
+                            "BA Against": 0.375,
+                            "SLG Against": 0.625
+                        },
+                        "vs Lefty": {
+                            "At Bats": 10,
+                            "Hits": 4,
+                            "SO": 5,
+                            "BA Against": 0.4,
+                            "SLG against": 0.4
+                        },
+                        "home": {
+                            "At Bats": 15,
+                            "Hits": 5,
+                            "SO": 5,
+                            "BA Against": 0.33299999999999996,
+                            "SLG Against": 0.5329999999999999
+                        },
+                        "away": {
+                            "At Bats": 11,
+                            "Hits": 5,
+                            "SO": 3,
+                            "BA Against": 0.455,
+                            "SLG Against": 0.545
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "T.J. Zeuch",
+                "link": "/player/t-j-zeuch-643615",
+                "throws": "RHP",
+                "wins": "0",
+                "losses": "1",
+                "era": "5.56 ERA",
+                "so": "5 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "At Bats": 43,
+                            "Hits": 9,
+                            "Games": 3
+                        },
+                        "vs Righty": {
+                            "At Bats": 33,
+                            "Hits": 5,
+                            "SO": 3,
+                            "BA Against": 0.152,
+                            "SLG Against": 0.273
+                        },
+                        "vs Lefty": {
+                            "At Bats": 10,
+                            "Hits": 4,
+                            "SO": 0,
+                            "BA Against": 0.4,
+                            "SLG against": 0.6
+                        },
+                        "home": {
+                            "At Bats": 31,
+                            "Hits": 6,
+                            "SO": 0,
+                            "BA Against": 0.19399999999999998,
+                            "SLG Against": 0.29
+                        },
+                        "away": {
+                            "At Bats": 12,
+                            "Hits": 3,
+                            "SO": 3,
+                            "BA Against": 0.25,
+                            "SLG Against": 0.5
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "At Bats": 30,
+                            "Hits": 9,
+                            "Games": 2
+                        },
+                        "vs Righty": {
+                            "At Bats": 21,
+                            "Hits": 3,
+                            "SO": 3,
+                            "BA Against": 0.14300000000000002,
+                            "SLG Against": 0.19
+                        },
+                        "vs Lefty": {
+                            "At Bats": 9,
+                            "Hits": 6,
+                            "SO": 0,
+                            "BA Against": 0.667,
+                            "SLG against": 1.444
+                        },
+                        "home": {
+                            "At Bats": 16,
+                            "Hits": 6,
+                            "SO": 2,
+                            "BA Against": 0.375,
+                            "SLG Against": 0.875
+                        },
+                        "away": {
+                            "At Bats": 14,
+                            "Hits": 3,
+                            "SO": 1,
+                            "BA Against": 0.214,
+                            "SLG Against": 0.214
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Aaron Hicks",
+                    "bats": "S"
+                },
+                {
+                    "#": 2,
+                    "name": "Aaron Judge",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Brett Gardner",
+                    "bats": "L"
+                },
+                {
+                    "#": 4,
+                    "name": "Gary Sanchez",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Gleyber Torres",
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Jay Bruce",
+                    "bats": "L"
+                },
+                {
+                    "#": 7,
+                    "name": "Gio Urshela",
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Rougned Odor",
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Kyle Higashioka",
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Marcus Semien",
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Bo Bichette",
+                    "bats": "R"
+                },
+                {
+                    "#": 3,
+                    "name": "Vladimir Guerrero Jr.",
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Randal Grichuk",
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Cavan Biggio",
+                    "bats": "L"
+                },
+                {
+                    "#": 6,
+                    "name": "Lourdes Gurriel Jr.",
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Rowdy Tellez",
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Alejandro Kirk",
+                    "bats": "R"
+                },
+                {
+                    "#": 9,
+                    "name": "Josh Palacios",
+                    "bats": "L"
+                }
+            ]
+        }
+    }
+]

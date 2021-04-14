@@ -5,15 +5,14 @@ from sys import argv
 import datetime
 from pitcher_utils import *
 from lineup_utils import *
+import json
 
 
 def getPlayerStats(matchup):
     print('matchup method')
 
-def getTodaysGames():
+def getTodaysGames(today):
 
-    print(datetime.date.today())
-    today = datetime.date.today()
     # letter_url = "https://www.pro-football-reference.com/players/{today}/"
     # need to change to todays date on actual script
     starting_lineups_url = "https://www.mlb.com/starting-lineups/{today}"
@@ -61,11 +60,19 @@ def getTodaysGames():
 
 
 def main():
-    matchups = getTodaysGames()
+    print(datetime.date.today())
+    today = datetime.date.today()
+
+    matchups = getTodaysGames(today)
     # for matchup in matchups:
     #     getPlayerStats(matchup)
 
-    print(matchups)
+    # print(matchups)
+
+    with open(f"{str(today)}.json", 'w') as fp:
+        json.dump(matchups, fp)
+
+    print('done')
 
 
 if __name__ == '__main__':
