@@ -1,3 +1,123 @@
+import pandas as pd  # dataframe
+from bs4 import BeautifulSoup, Comment #web scraper
+import requests  # to make an HTTP request
+
+
+def getSplits(player_code, year):
+    split_20_url = "https://www.baseball-reference.com/players/split.fcgi?id={player_code}&year={year}&t=p"
+    split_20_url = split_20_url.format(player_code=player_code, year=year)
+    print(split_20_url)
+    res = requests.get(split_20_url)
+    data = res.text
+
+    soup = BeautifulSoup(data, 'html5lib')
+    plato_table = None
+    total_table = None
+    hagl_table = None
+
+    for comment in soup.find_all(text=lambda text: isinstance(text, Comment)):
+        if comment.find("<table ") > 0:
+            comment_soup = BeautifulSoup(comment, 'html.parser')
+            table = comment_soup.find("table")
+            if table.get('id') == 'plato':
+                plato_table = str(table)
+            elif table.get('id') == 'total':
+                total_table = str(table)
+            elif table.get('id') == 'hmvis_extra':
+                hagl_table = str(table)
+
+    year_stats = {
+        'Totals': {},
+        'vs Righty': {},
+        'vs Lefty': {},
+        'home': {},
+        'away': {},
+    }
+
+    if total_table:
+        df = pd.read_html(total_table)[0]
+        for index, row in df.iterrows():
+            # print(row)
+            # print(row['Split'])
+            if row['Split'].strip() == f"{year} Totals":
+                print('Total')
+                # print(row)
+                year_stats['Totals']['at Bats'] = row['AB']
+                year_stats['Totals']['hits'] = row['H']
+                year_stats['Totals']['games'] = row['G']
+
+    
+    # home away game level table    
+    # df = pd.read_html(hagl_table)[0]
+    # for index, row in df.iterrows():
+    #     # print(row)
+    #     # print(row['Split'])
+    #     if row['Split'].strip() == '2020 Totals':
+    #         print('Total')
+    #         # print(row)
+    #         year_stats['Totals']['at Bats'] = row['AB']
+    #         year_stats['Totals']['hits'] = row['H']
+    #         year_stats['Totals']['games'] = row['G']
+
+    # '#right left table'
+    if plato_table:
+        df = pd.read_html(plato_table)[0]
+        for index, row in df.iterrows():
+            # print(row)
+            # print(row['Split'])
+            if row['Split'].strip() == 'vs RHB':
+                print('Right')
+                # print(row)
+                year_stats['vs Righty']['at Bats'] = row['AB']
+                year_stats['vs Righty']['hits'] = row['H']
+                year_stats['vs Righty']['so'] = row['SO']
+                year_stats['vs Righty']['ba against'] = row['BA']
+                year_stats['vs Righty']['slg against'] = row['SLG']
+            elif row['Split'].strip() == 'vs LHB':
+                print('Left')
+                year_stats['vs Lefty']['at Bats'] = row['AB']
+                year_stats['vs Lefty']['hits'] = row['H']
+                year_stats['vs Lefty']['so'] = row['SO']
+                year_stats['vs Lefty']['ba against'] = row['BA']
+                year_stats['vs Lefty']['slg against'] = row['SLG']
+
+    # print(year_stats)
+    return year_stats
+
+
+def getBaseballReferenceInfo(name):
+    letter_url = "https://www.baseball-reference.com/players/{letter}/"
+
+    names = name.split()
+    last_name = names[1]
+    letter_to_request = last_name[0].lower()
+    letter_url = letter_url.format(letter=letter_to_request)
+    res = requests.get(letter_url)  # make the http request
+    # pass the http request content into the BeautifulSoup http parser
+    soup = BeautifulSoup(res.content, 'html.parser')
+
+    section = soup.find(id="div_players_")
+    p_tags = section.find_all('p')  # find all p tags within the section
+    a_tags = [p.find('a', href=True) for p in p_tags]
+
+    splits = {}
+    for a in a_tags:
+        # print(a.contents)
+        # within the a tags - a.contents is a list of everything within the a tags
+        player_name = a.contents[0]
+        player_code = a.get('href').split('/')[-1].split('.')[0]  # the url
+        player_name = player_name.strip()
+
+        if player_name == name:
+            print("Made it")
+            # print(player_name)
+            # print(player_code)
+            splits['2020 Splits'] = getSplits(player_code, '2020')
+            splits['2021 Splits'] = getSplits(player_code, '2021')
+
+    return splits
+
+
 def getPitcher(pitcher_divs):
     pitchers = {}
     for pitcher_div in pitcher_divs:
@@ -32,7 +152,7 @@ def getPitcher(pitcher_divs):
                     so = pitcher_summary_div.find(
                         "span", {"class": "starting-lineups__pitcher-strikeouts"})
 
-                    # print(era)
+                    splits = getBaseballReferenceInfo(name)
 
                     pitcher = {
                         'name': name,
@@ -42,6 +162,7 @@ def getPitcher(pitcher_divs):
                         'losses': losses.contents[0].strip() if losses and losses.contents else '',
                         'era': era.contents[0].strip() if era and era.contents else '',
                         'so': so.contents[0].strip() if so and so.contents else '',
+                        'splits': splits,
                     }
                     if count == 1:
                         pitchers['away'] = pitcher

@@ -31,6 +31,11 @@ def getTodaysGames():
         home_a_tag = home_div.find('a', href=True)
         away_a_tag = away_div.find('a', href=True)
 
+        # time
+        time_div = matchup_div.find(
+            "div", {"class": "starting-lineups__game-date-time"})
+        time = time_div.find("time")
+
         home = {
             "team": home_a_tag.contents[0].strip(),
         }
@@ -43,6 +48,7 @@ def getTodaysGames():
         lineups = getLineups(matchup_div)
 
         matchup = {
+            "datetime": time.get('datetime'),
             "home": home,
             "away": away,
             "pitchers": pitchers,
