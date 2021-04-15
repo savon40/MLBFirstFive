@@ -172,6 +172,8 @@ def getBaseballReferenceInfo(name):
     a_tags = [p.find('a', href=True) for p in p_tags]
 
     splits = {}
+
+    print(name)
     for a in a_tags:
         # print(a.contents)
         # within the a tags - a.contents is a list of everything within the a tags
@@ -179,10 +181,8 @@ def getBaseballReferenceInfo(name):
         player_code = a.get('href').split('/')[-1].split('.')[0]  # the url
         player_name = player_name.strip()
 
+
         if player_name == name:
-            print("Made it")
-            # print(player_name)
-            # print(player_code)
             splits['2020 Splits'] = getSplits(player_code, '2020')
             splits['2021 Splits'] = getSplits(player_code, '2021')
 
