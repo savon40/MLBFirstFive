@@ -48,8 +48,6 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == f"{year} Totals":
-                print('Total')
-                # print(row)
                 year_stats['Totals']['At Bats'] = row['AB']
                 year_stats['Totals']['Hits'] = row['H']
                 year_stats['Totals']['Games Pitched'] = row['G']
@@ -71,8 +69,6 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == 'Home':
-                print('Home')
-                # print(row)
                 year_stats['home']['At Bats'] = row['AB']
                 year_stats['home']['Hits'] = row['H']
                 year_stats['home']['SO'] = row['SO']
@@ -80,8 +76,6 @@ def getSplits(player_code, year):
                 year_stats['home']['SLG'] = row['SLG']
                 year_stats['home']['Home Runs'] = row['HR']
             elif row['Split'].strip() == 'Away':
-                print('Away')
-                # print(row)
                 year_stats['away']['At Bats'] = row['AB']
                 year_stats['away']['Hits'] = row['H']
                 year_stats['away']['SO'] = row['SO']
@@ -96,8 +90,6 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == 'vs RHP':
-                print('Right')
-                # print(row)
                 year_stats['vs Righty']['At Bats'] = row['AB']
                 year_stats['vs Righty']['Hits'] = row['H']
                 year_stats['vs Righty']['SO'] = row['SO']
@@ -105,7 +97,6 @@ def getSplits(player_code, year):
                 year_stats['vs Righty']['SLG'] = row['SLG']
                 year_stats['vs Righty']['HR'] = row['HR']
             elif row['Split'].strip() == 'vs LHP':
-                print('Left')
                 year_stats['vs Lefty']['At Bats'] = row['AB']
                 year_stats['vs Lefty']['Hits'] = row['H']
                 year_stats['vs Lefty']['SO'] = row['SO']
@@ -133,24 +124,21 @@ def getBaseballReferenceInfo(name):
 
     splits = {}
     for a in a_tags:
-        # print(a.contents)
+
         # within the a tags - a.contents is a list of everything within the a tags
         player_name = a.contents[0]
         player_code = a.get('href').split('/')[-1].split('.')[0]  # the url
         player_name = player_name.strip()
 
+        print(player_name)
+
         if player_name == name:
-            print("Made it")
-            # print(player_name)
-            # print(player_code)
             splits['2020 Splits'] = getSplits(player_code, '2020')
             splits['2021 Splits'] = getSplits(player_code, '2021')
 
     return splits
 
 def getLineups(matchup_div):
-
-    # print('in lineup')
 
     away_lineup_ol = matchup_div.find(
         "ol", {"class": "starting-lineups__team--away"})
