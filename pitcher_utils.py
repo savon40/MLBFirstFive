@@ -13,6 +13,7 @@ def getSplits(player_code, year):
     soup = BeautifulSoup(data, 'html5lib')
     plato_table = None
     total_table = None
+    total_extra_table = None
     ha_table = None
     hagl_table = None
 
@@ -24,6 +25,8 @@ def getSplits(player_code, year):
                 plato_table = str(table)
             elif table.get('id') == 'total':
                 total_table = str(table)
+            elif table.get('id') == 'total_extra':
+                total_extra_table = str(table)
             elif table.get('id') == 'hmvis':
                 ha_table = str(table)
             elif table.get('id') == 'hmvis_extra':
@@ -31,12 +34,14 @@ def getSplits(player_code, year):
 
     year_stats = {
         'Totals': {},
+        'Last 14 Days': {},
         'vs Righty': {},
         'vs Lefty': {},
         'home': {},
         'away': {},
     }
 
+    #totals table
     if total_table:
         df = pd.read_html(total_table)[0]
         for index, row in df.iterrows():
@@ -47,7 +52,39 @@ def getSplits(player_code, year):
                 # print(row)
                 year_stats['Totals']['At Bats'] = row['AB']
                 year_stats['Totals']['Hits'] = row['H']
-                year_stats['Totals']['Games'] = row['G']
+                year_stats['Totals']['Games Pitched'] = row['G']
+                year_stats['Totals']['BA Against'] = row['BA']
+                year_stats['Totals']['SLG Against'] = row['SLG']
+            elif row['Split'].strip() == "Last 14 days":
+                year_stats['Last 14 Days']['Games Pitched'] = row['G']
+                year_stats['Last 14 Days']['At Bats'] = row['AB']
+                year_stats['Last 14 Days']['Hits'] = row['H']
+                year_stats['Last 14 Days']['Home Runs'] = row['HR']
+                year_stats['Last 14 Days']['BA Against'] = row['BA']
+                year_stats['Last 14 Days']['SLG Against'] = row['SLG']
+
+    #totals table
+    if total_extra_table:
+        df = pd.read_html(total_extra_table)[0]
+        for index, row in df.iterrows():
+            # print(row)
+            # print(row['Split'])
+            if row['Split'].strip() == f"{year} Totals":
+                print('Total')
+                # print(row)
+                year_stats['Totals']['Wins'] = row['W']
+                year_stats['Totals']['Losses'] = row['L']
+                year_stats['Totals']['ERA'] = row['ERA']
+                year_stats['Totals']['IP'] = row['IP']
+                year_stats['Totals']['Runs'] = row['R']
+                year_stats['Totals']['Home Runs'] = row['HR']
+            elif row['Split'].strip() == "Last 14 days":
+                year_stats['Last 14 Days']['Wins'] = row['W']
+                year_stats['Last 14 Days']['Losses'] = row['L']
+                year_stats['Last 14 Days']['ERA'] = row['ERA']
+                year_stats['Last 14 Days']['IP'] = row['IP']
+                year_stats['Last 14 Days']['Runs'] = row['R']
+                year_stats['Last 14 Days']['Home Runs'] = row['HR']
 
     # home away table
     if ha_table:
