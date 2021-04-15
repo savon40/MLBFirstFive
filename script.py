@@ -5,11 +5,17 @@ from sys import argv
 import datetime
 from pitcher_utils import *
 from lineup_utils import *
+from matchup_utils import *
 import json
 
 
-def getPlayerStats(matchup):
+def findWinners(data):
     print('matchup method')
+
+    for matchup in data:
+        compare_pitchers(matchup)
+        break
+
 
 def getTodaysGames(today):
 
@@ -63,14 +69,16 @@ def main():
     print(datetime.date.today())
     today = datetime.date.today()
 
-    matchups = getTodaysGames(today)
-    # for matchup in matchups:
-    #     getPlayerStats(matchup)
+    #gathering
+    # matchups = getTodaysGames(today)
+    # with open(f"{str(today)}.json", 'w') as fp:
+    #     json.dump(matchups, fp)
 
-    # print(matchups)
-
-    with open(f"{str(today)}.json", 'w') as fp:
-        json.dump(matchups, fp)
+    
+    #reading
+    f = open(f"{str(today)}.json",) # Opening JSON file
+    data = json.load(f) # returns JSON object as a dictionary
+    findWinners(data)
 
     print('done')
 
