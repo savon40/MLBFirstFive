@@ -3,6 +3,28 @@ import pandas as pd  # dataframe
 from bs4 import BeautifulSoup, Comment  # web scraper
 import requests  # to make an HTTP request
 
+
+def calculateWOBA(row):
+    # 0.699×Unintentional BB + 0.728×HBP + 0.883×singles + 1.238×doubles + 1.558×triples + 1.979×HR) / (AB + BB – Intentional BB + SF + HBP
+    # headers: Split	G	GS	PA	AB	R	H	2B	3B	HR	RBI	SB	CS	BB	SO	BA	OBP	SLG	OPS	TB	GDP	HBP	SH	SF	IBB	ROE	BAbip	tOPS+	sOPS
+    # PA = AB + Walk + HBP + Sac Fly + Sac Hit?
+    # I have: BB, HBP, doubles (2B), triples (3B), HR, AB, BB, IBB, SF, HBP
+    # just need to calculate: Single
+    BB = 0 if row['BB'] is None else row['BB']
+    HBP = 0 if row['HBP'] is None else row['HBP']
+    Doubles = 0 if row['2B'] is None else row['2B']
+    Triples = 0 if row['3B'] is None else row['3B']
+    HR = 0 if row['HR'] is None else row['HR']
+    PA = 0 if row['PA'] is None else row['PA']
+    IBB = 0 if row['IBB'] is None else row['IBB']
+    H = 0 if row['H'] is None else row['H']
+    Singles = H - Doubles - Triples - HR
+
+    WOBA = round((BB + (0.728*HBP) + (0.883*Singles) + (1.238 *
+                 Doubles) + (1.558*Triples) + (1.979*HR)) / (PA - IBB), 3)
+    return WOBA
+
+
 def getSplits(player_code, year):
     split_20_url = "https://www.baseball-reference.com/players/split.fcgi?id={player_code}&year={year}&t=b"
     split_20_url = split_20_url.format(player_code=player_code, year=year)
@@ -37,30 +59,34 @@ def getSplits(player_code, year):
         'Last 14 Days': {},
         'vs Righty': {},
         'vs Lefty': {},
-        'home': {},
-        'away': {},
+        'Home': {},
+        'Away': {},
     }
 
-    #totals table
+    # totals table
     if total_table:
         df = pd.read_html(total_table)[0]
         for index, row in df.iterrows():
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == f"{year} Totals":
-                year_stats['Totals']['At Bats'] = row['AB']
-                year_stats['Totals']['Hits'] = row['H']
-                year_stats['Totals']['Games Pitched'] = row['G']
-                year_stats['Totals']['BA'] = row['BA']
-                year_stats['Totals']['SLG'] = row['SLG']
-                year_stats['Totals']['Home Runs'] = row['HR']
+                year_stats['Totals']['Plate Appearances'] = row['PA']
+                year_stats['Totals']['WOBA'] = calculateWOBA(row)
+                # year_stats['Totals']['At Bats'] = row['AB']
+                # year_stats['Totals']['Hits'] = row['H']
+                # year_stats['Totals']['Games Pitched'] = row['G']
+                # year_stats['Totals']['BA'] = row['BA']
+                # year_stats['Totals']['SLG'] = row['SLG']
+                # year_stats['Totals']['Home Runs'] = row['HR']
             elif row['Split'].strip() == "Last 14 days":
-                year_stats['Last 14 Days']['Games Pitched'] = row['G']
-                year_stats['Last 14 Days']['At Bats'] = row['AB']
-                year_stats['Last 14 Days']['Hits'] = row['H']
-                year_stats['Last 14 Days']['Home Runs'] = row['HR']
-                year_stats['Last 14 Days']['BA'] = row['BA']
-                year_stats['Last 14 Days']['SLG'] = row['SLG']
+                year_stats['Last 14 Days']['Plate Appearances'] = row['PA']
+                year_stats['Last 14 Days']['WOBA'] = calculateWOBA(row)
+                # year_stats['Last 14 Days']['Games Pitched'] = row['G']
+                # year_stats['Last 14 Days']['At Bats'] = row['AB']
+                # year_stats['Last 14 Days']['Hits'] = row['H']
+                # year_stats['Last 14 Days']['Home Runs'] = row['HR']
+                # year_stats['Last 14 Days']['BA'] = row['BA']
+                # year_stats['Last 14 Days']['SLG'] = row['SLG']
 
     # home away table
     if ha_table:
@@ -69,19 +95,22 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == 'Home':
-                year_stats['home']['At Bats'] = row['AB']
-                year_stats['home']['Hits'] = row['H']
-                year_stats['home']['SO'] = row['SO']
-                year_stats['home']['BA'] = row['BA']
-                year_stats['home']['SLG'] = row['SLG']
-                year_stats['home']['Home Runs'] = row['HR']
+
+                year_stats['Home']['Plate Appearances'] = row['PA']
+                year_stats['Home']['WOBA'] = calculateWOBA(row)
+                # year_stats['home']['Hits'] = row['H']
+                # year_stats['home']['SO'] = row['SO']
+                # year_stats['home']['BA'] = row['BA']
+                # year_stats['home']['SLG'] = row['SLG']
+                # year_stats['home']['Home Runs'] = row['HR']
             elif row['Split'].strip() == 'Away':
-                year_stats['away']['At Bats'] = row['AB']
-                year_stats['away']['Hits'] = row['H']
-                year_stats['away']['SO'] = row['SO']
-                year_stats['away']['BA'] = row['BA']
-                year_stats['away']['SLG'] = row['SLG']
-                year_stats['away']['Home Runs'] = row['HR']
+                year_stats['Away']['Plate Appearances'] = row['PA']
+                year_stats['Away']['WOBA'] = calculateWOBA(row)
+                # year_stats['Away']['Hits'] = row['H']
+                # year_stats['Away']['SO'] = row['SO']
+                # year_stats['Away']['BA'] = row['BA']
+                # year_stats['Away']['SLG'] = row['SLG']
+                # year_stats['Away']['Home Runs'] = row['HR']
 
     # '#right left table'
     if plato_table:
@@ -90,22 +119,27 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == 'vs RHP':
-                year_stats['vs Righty']['At Bats'] = row['AB']
-                year_stats['vs Righty']['Hits'] = row['H']
-                year_stats['vs Righty']['SO'] = row['SO']
-                year_stats['vs Righty']['BA'] = row['BA']
-                year_stats['vs Righty']['SLG'] = row['SLG']
-                year_stats['vs Righty']['HR'] = row['HR']
+                year_stats['vs Righty']['Plate Appearances'] = row['PA']
+                year_stats['vs Righty']['WOBA'] = calculateWOBA(row)
+                # year_stats['vs Righty']['At Bats'] = row['AB']
+                # year_stats['vs Righty']['Hits'] = row['H']
+                # year_stats['vs Righty']['SO'] = row['SO']
+                # year_stats['vs Righty']['BA'] = row['BA']
+                # year_stats['vs Righty']['SLG'] = row['SLG']
+                # year_stats['vs Righty']['HR'] = row['HR']
             elif row['Split'].strip() == 'vs LHP':
-                year_stats['vs Lefty']['At Bats'] = row['AB']
-                year_stats['vs Lefty']['Hits'] = row['H']
-                year_stats['vs Lefty']['SO'] = row['SO']
-                year_stats['vs Lefty']['BA'] = row['BA']
-                year_stats['vs Lefty']['SLG'] = row['SLG']
-                year_stats['vs Lefty']['HR'] = row['HR']
+                year_stats['vs Lefty']['Plate Appearances'] = row['PA']
+                year_stats['vs Lefty']['WOBA'] = calculateWOBA(row)
+                # year_stats['vs Lefty']['At Bats'] = row['AB']
+                # year_stats['vs Lefty']['Hits'] = row['H']
+                # year_stats['vs Lefty']['SO'] = row['SO']
+                # year_stats['vs Lefty']['BA'] = row['BA']
+                # year_stats['vs Lefty']['SLG'] = row['SLG']
+                # year_stats['vs Lefty']['HR'] = row['HR']
 
     # print(year_stats)
     return year_stats
+
 
 def getBaseballReferenceInfo(name):
     letter_url = "https://www.baseball-reference.com/players/{letter}/"
@@ -137,6 +171,7 @@ def getBaseballReferenceInfo(name):
 
     return splits
 
+
 def getLineups(matchup_div):
 
     away_lineup_ol = matchup_div.find(
@@ -167,9 +202,8 @@ def getLineups(matchup_div):
 
         away_lineup.append(player)
 
-    
     home_lineup_ol = matchup_div.find(
-            "ol", {"class": "starting-lineups__team--home"})
+        "ol", {"class": "starting-lineups__team--home"})
     home_lineup_lis = home_lineup_ol.find_all(
         "li", {"class": "starting-lineups__player"})
     home_lineup = []

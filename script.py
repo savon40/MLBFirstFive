@@ -60,6 +60,7 @@ def getTodaysGames(today):
             "lineups": lineups
         }
         final_matchups.append(matchup)
+        break
         # exit()
 
     return final_matchups

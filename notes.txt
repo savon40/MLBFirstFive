@@ -3,4 +3,15 @@ https://www.rotoballer.com/mlb-bvp-batter-vs-pitcher-daily-matchups-stats
 
 Can do WOBA against for Pitchers: 
     For pitchers, of course, the opposite is true: the lower the opposing wOBA, the more effective the pitcher has been.
-    
+
+
+WOBA Rule of Thumb
+
+Excellent	    .400
+Great	        .370
+Above Average	.340
+Average	        .320
+Below Average	.310
+Poor	        .300
+Awful	        .290
+
