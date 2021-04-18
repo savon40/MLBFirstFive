@@ -1,0 +1,6 @@
+https://www.rotoballer.com/mlb-bvp-batter-vs-pitcher-daily-matchups-stats
+    - maybe pitcher vs batter stats
+
+Can do WOBA against for Pitchers: 
+    For pitchers, of course, the opposite is true: the lower the opposing wOBA, the more effective the pitcher has been.
+    
