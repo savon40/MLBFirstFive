@@ -15,3 +15,45 @@ Below Average	.310
 Poor	        .300
 Awful	        .290
 
+
+
+Add up team WOBA average for away lefty or home righty or whatever the combo is 
+See which team us higher WOBA vs their pitcher matchup combo 
+Also add up and average for last 14 days 
+
+—-
+Pitchers see which ones have lower WOBA vs the batters using their combos - first do home / away
+Then see how many lefties they facing and how many righties - need to average their WOBAs for this 
+See which pitcher has lower WOBA 
+
+—- 
+
+Can easily calculate if pitcher has an advantage and lineup has advantage let’s go 
+
+---
+
+ORDER:
+first need to see if pitcher is home or away / lefty or righty
+get their home / away woba based on whatever they are
+
+then add up how many lefties / righties they are facing - Switch hitters will be the opposite of what they are. 
+woba formula: ((WOBA v Lefties * num lefties) + (WOBA v Righties * num Righties)) / 9 --> player against WOBA
+
+so now we have the pitchers away / home and lefty / righty
+
+- as we are looping through the players, we can do all of their away WOBA if away or home WOBA if home
+- we can also do their WOBAs vs Lefties if vs Lefty or Righties if vs Righty
+
+we can weight the WOBAs - because we have 2020 and 2021 --> maybe to start just do (2020 * 1) and (2021 * 1.5)
+
+so example so far:
+    pitcher: 
+        2020 Home WOBA + (2021 Home WOBA * 1.5)
+        (((2020 Lefty WOBA * num L) + (2020 Righty WOBA * num R)) / 9) + (((2021 Lefty WOBA * num L) + (2021 Righty WOBA * num R)) / 9) * 1.5
+        add these
+        can compare the two pitchers now - the lower one would be better 
+    batter:
+        2020 Away WOBA + (2021 Away WOBA * 1.5)
+        2020 vs Righty WOBA + (2021 Righty WOBA * 1.5)
+        - add this up for all players on the team and divide by 9 --> if a batter doesnt have these for whatever reason just give the average? 
+        can compare the two lineups now - the higher would be better
