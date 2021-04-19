@@ -1,0 +1,1113 @@
+[
+    {
+        "datetime": "2021-04-19T15:10:00Z",
+        "home": {
+            "team": "Red Sox"
+        },
+        "away": {
+            "team": "White Sox"
+        },
+        "pitchers": {
+            "away": {
+                "name": "Lucas Giolito",
+                "link": "/player/lucas-giolito-608337",
+                "throws": "RHP",
+                "wins": "1",
+                "losses": "0",
+                "era": "5.79 ERA",
+                "so": "26 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "Plate Appearances": 288,
+                            "WOBA Against": 0.287,
+                            "Games Pitched": 12
+                        },
+                        "Last 14 Days": {},
+                        "vs Righty": {
+                            "Plate Appearances": 118,
+                            "WOBA Against": 0.266,
+                            "Games Pitched": 12
+                        },
+                        "vs Lefty": {
+                            "Plate Appearances": 170,
+                            "WOBA Against": 0.301,
+                            "Games Pitched": 12
+                        },
+                        "Home": {
+                            "Plate Appearances": 174,
+                            "WOBA Against": 0.283,
+                            "Games Pitched": 7
+                        },
+                        "Away": {
+                            "Plate Appearances": 114,
+                            "WOBA Against": 0.293,
+                            "Games Pitched": 5
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "Plate Appearances": 68,
+                            "WOBA Against": 0.217,
+                            "Games Pitched": 3
+                        },
+                        "Last 14 Days": {
+                            "Plate Appearances": 48,
+                            "WOBA Against": 0.206,
+                            "Games Pitched": 2
+                        },
+                        "vs Righty": {
+                            "Plate Appearances": 32,
+                            "WOBA Against": 0.277,
+                            "Games Pitched": 3
+                        },
+                        "vs Lefty": {
+                            "Plate Appearances": 36,
+                            "WOBA Against": 0.164,
+                            "Games Pitched": 3
+                        },
+                        "Home": {
+                            "Plate Appearances": 26,
+                            "WOBA Against": 0.192,
+                            "Games Pitched": 1
+                        },
+                        "Away": {
+                            "Plate Appearances": 42,
+                            "WOBA Against": 0.232,
+                            "Games Pitched": 2
+                        }
+                    }
+                }
+            },
+            "home": {
+                "name": "Nathan Eovaldi",
+                "link": "/player/nathan-eovaldi-543135",
+                "throws": "RHP",
+                "wins": "2",
+                "losses": "1",
+                "era": "2.66 ERA",
+                "so": "20 SO",
+                "splits": {
+                    "2020 Splits": {
+                        "Totals": {
+                            "Plate Appearances": 199,
+                            "WOBA Against": 0.345,
+                            "Games Pitched": 9
+                        },
+                        "Last 14 Days": {},
+                        "vs Righty": {
+                            "Plate Appearances": 97,
+                            "WOBA Against": 0.414,
+                            "Games Pitched": 9
+                        },
+                        "vs Lefty": {
+                            "Plate Appearances": 102,
+                            "WOBA Against": 0.279,
+                            "Games Pitched": 9
+                        },
+                        "Home": {
+                            "Plate Appearances": 70,
+                            "WOBA Against": 0.307,
+                            "Games Pitched": 3
+                        },
+                        "Away": {
+                            "Plate Appearances": 129,
+                            "WOBA Against": 0.365,
+                            "Games Pitched": 6
+                        }
+                    },
+                    "2021 Splits": {
+                        "Totals": {
+                            "Plate Appearances": 66,
+                            "WOBA Against": 0.248,
+                            "Games Pitched": 3
+                        },
+                        "Last 14 Days": {
+                            "Plate Appearances": 47,
+                            "WOBA Against": 0.252,
+                            "Games Pitched": 2
+                        },
+                        "vs Righty": {
+                            "Plate Appearances": 29,
+                            "WOBA Against": 0.224,
+                            "Games Pitched": 3
+                        },
+                        "vs Lefty": {
+                            "Plate Appearances": 37,
+                            "WOBA Against": 0.267,
+                            "Games Pitched": 3
+                        },
+                        "Home": {
+                            "Plate Appearances": 45,
+                            "WOBA Against": 0.242,
+                            "Games Pitched": 2
+                        },
+                        "Away": {
+                            "Plate Appearances": 21,
+                            "WOBA Against": 0.262,
+                            "Games Pitched": 1
+                        }
+                    }
+                }
+            }
+        },
+        "lineups": {
+            "away": [
+                {
+                    "#": 1,
+                    "name": "Tim Anderson",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 221,
+                                "WOBA": 0.39
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 166,
+                                "WOBA": 0.307
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 55,
+                                "WOBA": 0.639
+                            },
+                            "Home": {
+                                "Plate Appearances": 112,
+                                "WOBA": 0.37
+                            },
+                            "Away": {
+                                "Plate Appearances": 109,
+                                "WOBA": 0.41
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 29,
+                                "WOBA": 0.35
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 14,
+                                "WOBA": 0.457
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 26,
+                                "WOBA": 0.39
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 3,
+                                "WOBA": 0.0
+                            },
+                            "Home": {
+                                "Plate Appearances": 5,
+                                "WOBA": 0.353
+                            },
+                            "Away": {
+                                "Plate Appearances": 24,
+                                "WOBA": 0.349
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Adam Eaton",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 176,
+                                "WOBA": 0.306
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 131,
+                                "WOBA": 0.345
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 45,
+                                "WOBA": 0.192
+                            },
+                            "Home": {
+                                "Plate Appearances": 103,
+                                "WOBA": 0.341
+                            },
+                            "Away": {
+                                "Plate Appearances": 73,
+                                "WOBA": 0.256
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 62,
+                                "WOBA": 0.392
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 43,
+                                "WOBA": 0.388
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 51,
+                                "WOBA": 0.44
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 11,
+                                "WOBA": 0.171
+                            },
+                            "Home": {
+                                "Plate Appearances": 25,
+                                "WOBA": 0.422
+                            },
+                            "Away": {
+                                "Plate Appearances": 37,
+                                "WOBA": 0.372
+                            }
+                        }
+                    },
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "Luis Robert",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 227,
+                                "WOBA": 0.34
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 176,
+                                "WOBA": 0.327
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 51,
+                                "WOBA": 0.382
+                            },
+                            "Home": {
+                                "Plate Appearances": 104,
+                                "WOBA": 0.355
+                            },
+                            "Away": {
+                                "Plate Appearances": 123,
+                                "WOBA": 0.327
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 69,
+                                "WOBA": 0.359
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 52,
+                                "WOBA": 0.366
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 54,
+                                "WOBA": 0.307
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 15,
+                                "WOBA": 0.548
+                            },
+                            "Home": {
+                                "Plate Appearances": 27,
+                                "WOBA": 0.335
+                            },
+                            "Away": {
+                                "Plate Appearances": 42,
+                                "WOBA": 0.375
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Jose Abreu",
+                    "splits": {},
+                    "bats": "R"
+                },
+                {
+                    "#": 5,
+                    "name": "Yasmani Grandal",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 194,
+                                "WOBA": 0.385
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 157,
+                                "WOBA": 0.372
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 37,
+                                "WOBA": 0.439
+                            },
+                            "Home": {
+                                "Plate Appearances": 91,
+                                "WOBA": 0.375
+                            },
+                            "Away": {
+                                "Plate Appearances": 103,
+                                "WOBA": 0.394
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 42,
+                                "WOBA": 0.362
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 29,
+                                "WOBA": 0.383
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 37,
+                                "WOBA": 0.31
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 5,
+                                "WOBA": 0.749
+                            },
+                            "Home": {
+                                "Plate Appearances": 16,
+                                "WOBA": 0.188
+                            },
+                            "Away": {
+                                "Plate Appearances": 26,
+                                "WOBA": 0.47
+                            }
+                        }
+                    },
+                    "bats": "S"
+                },
+                {
+                    "#": 6,
+                    "name": "Yermin Mercedes",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 1,
+                                "WOBA": 0.0
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 1,
+                                "WOBA": 0.0
+                            },
+                            "vs Lefty": {},
+                            "Home": {},
+                            "Away": {
+                                "Plate Appearances": 1,
+                                "WOBA": 0.0
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 57,
+                                "WOBA": 0.513
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 43,
+                                "WOBA": 0.453
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 44,
+                                "WOBA": 0.48
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 13,
+                                "WOBA": 0.623
+                            },
+                            "Home": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.533
+                            },
+                            "Away": {
+                                "Plate Appearances": 35,
+                                "WOBA": 0.5
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 7,
+                    "name": "Jake Lamb",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 99,
+                                "WOBA": 0.306
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 79,
+                                "WOBA": 0.3
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 20,
+                                "WOBA": 0.328
+                            },
+                            "Home": {
+                                "Plate Appearances": 43,
+                                "WOBA": 0.344
+                            },
+                            "Away": {
+                                "Plate Appearances": 56,
+                                "WOBA": 0.276
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 12,
+                                "WOBA": 0.324
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 12,
+                                "WOBA": 0.324
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 12.0,
+                                "WOBA": 0.324
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": NaN,
+                                "WOBA": NaN
+                            },
+                            "Home": {
+                                "Plate Appearances": 5,
+                                "WOBA": 0.0
+                            },
+                            "Away": {
+                                "Plate Appearances": 7,
+                                "WOBA": 0.555
+                            }
+                        }
+                    },
+                    "bats": "L"
+                },
+                {
+                    "#": 8,
+                    "name": "Leury Garcia",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 63,
+                                "WOBA": 0.346
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 55,
+                                "WOBA": 0.312
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 8,
+                                "WOBA": 0.579
+                            },
+                            "Home": {
+                                "Plate Appearances": 31,
+                                "WOBA": 0.385
+                            },
+                            "Away": {
+                                "Plate Appearances": 32,
+                                "WOBA": 0.307
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 39,
+                                "WOBA": 0.18
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 27,
+                                "WOBA": 0.227
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 27,
+                                "WOBA": 0.148
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 12,
+                                "WOBA": 0.25
+                            },
+                            "Home": {
+                                "Plate Appearances": 12,
+                                "WOBA": 0.29
+                            },
+                            "Away": {
+                                "Plate Appearances": 27,
+                                "WOBA": 0.131
+                            }
+                        }
+                    },
+                    "bats": "S"
+                },
+                {
+                    "#": 9,
+                    "name": "Nick Madrigal",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 109,
+                                "WOBA": 0.343
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 87,
+                                "WOBA": 0.379
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.201
+                            },
+                            "Home": {
+                                "Plate Appearances": 41,
+                                "WOBA": 0.301
+                            },
+                            "Away": {
+                                "Plate Appearances": 68,
+                                "WOBA": 0.369
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 52,
+                                "WOBA": 0.337
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 40,
+                                "WOBA": 0.354
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 39,
+                                "WOBA": 0.311
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 13,
+                                "WOBA": 0.417
+                            },
+                            "Home": {
+                                "Plate Appearances": 19,
+                                "WOBA": 0.331
+                            },
+                            "Away": {
+                                "Plate Appearances": 33,
+                                "WOBA": 0.34
+                            }
+                        }
+                    },
+                    "bats": "R"
+                }
+            ],
+            "home": [
+                {
+                    "#": 1,
+                    "name": "Enrique Hernandez",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 148,
+                                "WOBA": 0.302
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 98,
+                                "WOBA": 0.305
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 50,
+                                "WOBA": 0.296
+                            },
+                            "Home": {
+                                "Plate Appearances": 75,
+                                "WOBA": 0.325
+                            },
+                            "Away": {
+                                "Plate Appearances": 73,
+                                "WOBA": 0.279
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 66,
+                                "WOBA": 0.32
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 53,
+                                "WOBA": 0.344
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 44,
+                                "WOBA": 0.324
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.312
+                            },
+                            "Home": {
+                                "Plate Appearances": 37,
+                                "WOBA": 0.345
+                            },
+                            "Away": {
+                                "Plate Appearances": 29,
+                                "WOBA": 0.288
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 2,
+                    "name": "Alex Verdugo",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 221,
+                                "WOBA": 0.388
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 139,
+                                "WOBA": 0.399
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 82,
+                                "WOBA": 0.371
+                            },
+                            "Home": {
+                                "Plate Appearances": 115,
+                                "WOBA": 0.394
+                            },
+                            "Away": {
+                                "Plate Appearances": 106,
+                                "WOBA": 0.383
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 65,
+                                "WOBA": 0.354
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 54,
+                                "WOBA": 0.428
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 46,
+                                "WOBA": 0.393
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 19,
+                                "WOBA": 0.262
+                            },
+                            "Home": {
+                                "Plate Appearances": 33,
+                                "WOBA": 0.245
+                            },
+                            "Away": {
+                                "Plate Appearances": 32,
+                                "WOBA": 0.463
+                            }
+                        }
+                    },
+                    "bats": "L"
+                },
+                {
+                    "#": 3,
+                    "name": "J.D. Martinez",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 237,
+                                "WOBA": 0.327
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 174,
+                                "WOBA": 0.329
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 63,
+                                "WOBA": 0.322
+                            },
+                            "Home": {
+                                "Plate Appearances": 118,
+                                "WOBA": 0.368
+                            },
+                            "Away": {
+                                "Plate Appearances": 119,
+                                "WOBA": 0.285
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 61,
+                                "WOBA": 0.518
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 49,
+                                "WOBA": 0.493
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 43,
+                                "WOBA": 0.611
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 18,
+                                "WOBA": 0.297
+                            },
+                            "Home": {
+                                "Plate Appearances": 38,
+                                "WOBA": 0.518
+                            },
+                            "Away": {
+                                "Plate Appearances": 23,
+                                "WOBA": 0.519
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 4,
+                    "name": "Rafael Devers",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 248,
+                                "WOBA": 0.353
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 159,
+                                "WOBA": 0.387
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 89,
+                                "WOBA": 0.292
+                            },
+                            "Home": {
+                                "Plate Appearances": 123,
+                                "WOBA": 0.339
+                            },
+                            "Away": {
+                                "Plate Appearances": 125,
+                                "WOBA": 0.366
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 64,
+                                "WOBA": 0.396
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 57,
+                                "WOBA": 0.427
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 42,
+                                "WOBA": 0.361
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.46
+                            },
+                            "Home": {
+                                "Plate Appearances": 32,
+                                "WOBA": 0.211
+                            },
+                            "Away": {
+                                "Plate Appearances": 32,
+                                "WOBA": 0.575
+                            }
+                        }
+                    },
+                    "bats": "L"
+                },
+                {
+                    "#": 5,
+                    "name": "Christian Vazquez",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 189,
+                                "WOBA": 0.371
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 128,
+                                "WOBA": 0.374
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 61,
+                                "WOBA": 0.364
+                            },
+                            "Home": {
+                                "Plate Appearances": 89,
+                                "WOBA": 0.355
+                            },
+                            "Away": {
+                                "Plate Appearances": 100,
+                                "WOBA": 0.385
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 50,
+                                "WOBA": 0.355
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 42,
+                                "WOBA": 0.327
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 32,
+                                "WOBA": 0.367
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 18,
+                                "WOBA": 0.332
+                            },
+                            "Home": {
+                                "Plate Appearances": 24,
+                                "WOBA": 0.484
+                            },
+                            "Away": {
+                                "Plate Appearances": 26,
+                                "WOBA": 0.236
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 6,
+                    "name": "Marwin Gonzalez",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 199,
+                                "WOBA": 0.295
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 132,
+                                "WOBA": 0.317
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 67,
+                                "WOBA": 0.252
+                            },
+                            "Home": {
+                                "Plate Appearances": 97,
+                                "WOBA": 0.283
+                            },
+                            "Away": {
+                                "Plate Appearances": 102,
+                                "WOBA": 0.306
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 50,
+                                "WOBA": 0.332
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 39,
+                                "WOBA": 0.336
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 35,
+                                "WOBA": 0.421
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 15,
+                                "WOBA": 0.126
+                            },
+                            "Home": {
+                                "Plate Appearances": 28,
+                                "WOBA": 0.298
+                            },
+                            "Away": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.375
+                            }
+                        }
+                    },
+                    "bats": "S"
+                },
+                {
+                    "#": 7,
+                    "name": "Hunter Renfroe",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 139,
+                                "WOBA": 0.308
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 88,
+                                "WOBA": 0.264
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 51,
+                                "WOBA": 0.382
+                            },
+                            "Home": {
+                                "Plate Appearances": 71,
+                                "WOBA": 0.349
+                            },
+                            "Away": {
+                                "Plate Appearances": 68,
+                                "WOBA": 0.265
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 38,
+                                "WOBA": 0.257
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 31,
+                                "WOBA": 0.314
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 24,
+                                "WOBA": 0.194
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 14,
+                                "WOBA": 0.364
+                            },
+                            "Home": {
+                                "Plate Appearances": 26,
+                                "WOBA": 0.149
+                            },
+                            "Away": {
+                                "Plate Appearances": 12,
+                                "WOBA": 0.488
+                            }
+                        }
+                    },
+                    "bats": "R"
+                },
+                {
+                    "#": 8,
+                    "name": "Franchy Cordero",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 42,
+                                "WOBA": 0.341
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 33,
+                                "WOBA": 0.343
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 9,
+                                "WOBA": 0.333
+                            },
+                            "Home": {
+                                "Plate Appearances": 23,
+                                "WOBA": 0.449
+                            },
+                            "Away": {
+                                "Plate Appearances": 19,
+                                "WOBA": 0.211
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 36,
+                                "WOBA": 0.299
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 31,
+                                "WOBA": 0.348
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 34,
+                                "WOBA": 0.291
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 2,
+                                "WOBA": 0.442
+                            },
+                            "Home": {
+                                "Plate Appearances": 17,
+                                "WOBA": 0.308
+                            },
+                            "Away": {
+                                "Plate Appearances": 19,
+                                "WOBA": 0.291
+                            }
+                        }
+                    },
+                    "bats": "L"
+                },
+                {
+                    "#": 9,
+                    "name": "Bobby Dalbec",
+                    "splits": {
+                        "2020 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 92,
+                                "WOBA": 0.433
+                            },
+                            "Last 14 Days": {},
+                            "vs Righty": {
+                                "Plate Appearances": 64,
+                                "WOBA": 0.428
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 28,
+                                "WOBA": 0.443
+                            },
+                            "Home": {
+                                "Plate Appearances": 47,
+                                "WOBA": 0.416
+                            },
+                            "Away": {
+                                "Plate Appearances": 45,
+                                "WOBA": 0.451
+                            }
+                        },
+                        "2021 Splits": {
+                            "Totals": {
+                                "Plate Appearances": 41,
+                                "WOBA": 0.302
+                            },
+                            "Last 14 Days": {
+                                "Plate Appearances": 30,
+                                "WOBA": 0.379
+                            },
+                            "vs Righty": {
+                                "Plate Appearances": 25,
+                                "WOBA": 0.29
+                            },
+                            "vs Lefty": {
+                                "Plate Appearances": 16,
+                                "WOBA": 0.32
+                            },
+                            "Home": {
+                                "Plate Appearances": 19,
+                                "WOBA": 0.304
+                            },
+                            "Away": {
+                                "Plate Appearances": 22,
+                                "WOBA": 0.3
+                            }
+                        }
+                    },
+                    "bats": "R"
+                }
+            ]
+        }
+    }
+]

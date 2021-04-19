@@ -49,6 +49,7 @@ we can weight the WOBAs - because we have 2020 and 2021 --> maybe to start just 
 so example so far:
     pitcher: 
         2020 Home WOBA + (2021 Home WOBA * 1.5)
+        Last 14 Days WOBA --> just add this in as well
         (((2020 Lefty WOBA * num L) + (2020 Righty WOBA * num R)) / 9) + (((2021 Lefty WOBA * num L) + (2021 Righty WOBA * num R)) / 9) * 1.5
         add these
         can compare the two pitchers now - the lower one would be better 

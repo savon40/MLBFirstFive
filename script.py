@@ -13,7 +13,7 @@ def findWinners(data):
     print('matchup method')
 
     for matchup in data:
-        compare_pitchers(matchup)
+        compareMatchup(matchup)
         break
 
 
@@ -60,7 +60,7 @@ def getTodaysGames(today):
             "lineups": lineups
         }
         final_matchups.append(matchup)
-        # break
+        break
         # exit()
 
     return final_matchups
@@ -71,15 +71,15 @@ def main():
     today = datetime.date.today()
 
     #gathering
-    matchups = getTodaysGames(today)
-    with open(f"{str(today)}.json", 'w') as fp:
-        json.dump(matchups, fp)
+    # matchups = getTodaysGames(today)
+    # with open(f"{str(today)}.json", 'w') as fp:
+    #     json.dump(matchups, fp)
 
     
     #reading
-    # f = open(f"{str(today)}.json",) # Opening JSON file
-    # data = json.load(f) # returns JSON object as a dictionary
-    # findWinners(data)
+    f = open(f"{str(today)}.json",) # Opening JSON file
+    data = json.load(f) # returns JSON object as a dictionary
+    findWinners(data)
 
     print('done')
 
