@@ -12,9 +12,16 @@ import json
 def findWinners(data):
     print('matchup method')
 
+    final_list = []
     for matchup in data:
-        compareMatchup(matchup)
-        break
+
+        print(matchup)
+        if matchup['pitchers'] and len(matchup['pitchers']) == 2 and matchup['pitchers']['away'] and matchup['lineups'] and matchup['lineups']['away'] and matchup['lineups']['home']:
+            match = compareMatchup(matchup)
+            final_list.append(match)
+        # break
+
+    return final_list
 
 
 def getTodaysGames(today):
@@ -48,7 +55,8 @@ def getTodaysGames(today):
             "team": away_a_tag.contents[0].strip(),
         }
 
-        pitcher_divs = matchup_div.find_all( "div", {"class": "starting-lineups__pitchers"})
+        pitcher_divs = matchup_div.find_all(
+            "div", {"class": "starting-lineups__pitchers"})
         pitchers = getPitcher(pitcher_divs)
         lineups = getLineups(matchup_div)
 
@@ -60,7 +68,7 @@ def getTodaysGames(today):
             "lineups": lineups
         }
         final_matchups.append(matchup)
-        break
+        # break
         # exit()
 
     return final_matchups
@@ -70,18 +78,18 @@ def main():
     print(datetime.date.today())
     today = datetime.date.today()
 
-    #gathering
+    # gathering
     # matchups = getTodaysGames(today)
     # with open(f"{str(today)}.json", 'w') as fp:
     #     json.dump(matchups, fp)
 
-    
-    #reading
-    f = open(f"{str(today)}.json",) # Opening JSON file
-    data = json.load(f) # returns JSON object as a dictionary
-    findWinners(data)
+    # reading
+    f = open(f"{str(today)}.json",)  # Opening JSON file
+    data = json.load(f)  # returns JSON object as a dictionary
+    final = findWinners(data)
 
     print('done')
+    print(final)
 
 
 if __name__ == '__main__':

@@ -14,8 +14,10 @@ def calculateWOBA(row):
     H = 0 if row['H'] is None else row['H']
     Singles = H - Doubles - Triples - HR
 
-    WOBA = round((BB + (0.728*HBP) + (0.883*Singles) + (1.238*Doubles) + (1.558*Triples) + (1.979*HR)) / (PA - IBB), 3)
+    WOBA = round((BB + (0.728*HBP) + (0.883*Singles) + (1.238 *
+                 Doubles) + (1.558*Triples) + (1.979*HR)) / (PA - IBB), 3)
     return WOBA
+
 
 def getSplits(player_code, year):
     split_20_url = "https://www.baseball-reference.com/players/split.fcgi?id={player_code}&year={year}&t=p"
@@ -62,7 +64,7 @@ def getSplits(player_code, year):
             # print(row)
             # print(row['Split'])
             if row['Split'].strip() == f"{year} Totals":
-                
+
                 # print(row)
                 year_stats['Totals']['Plate Appearances'] = row['PA']
                 year_stats['Totals']['WOBA Against'] = calculateWOBA(row)
@@ -206,7 +208,6 @@ def getBaseballReferenceInfo(name):
         player_name = a.contents[0]
         player_code = a.get('href').split('/')[-1].split('.')[0]  # the url
         player_name = player_name.strip()
-
 
         if player_name == name:
             splits['2020 Splits'] = getSplits(player_code, '2020')

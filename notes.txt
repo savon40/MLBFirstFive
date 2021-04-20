@@ -58,3 +58,9 @@ so example so far:
         2020 vs Righty WOBA + (2021 Righty WOBA * 1.5)
         - add this up for all players on the team and divide by 9 --> if a batter doesnt have these for whatever reason just give the average? 
         can compare the two lineups now - the higher would be better
+
+-----
+
+Other:
+
+https://www.fangraphs.com/leaders.aspx?pos=all&stats=pit&lg=all&qual=y&type=4&season=2021&month=0&season1=2021&ind=0&team=0&rost=0&age=0&filter=&players=0&startdate=2021-01-01&enddate=2021-12-31&sort=4,d
