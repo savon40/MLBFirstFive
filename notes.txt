@@ -59,8 +59,35 @@ so example so far:
         - add this up for all players on the team and divide by 9 --> if a batter doesnt have these for whatever reason just give the average? 
         can compare the two lineups now - the higher would be better
 
+    #HAVE TO DO THE NUM_LEFTIES VS NUM_RIGHTIES TOO - probably just total the numbers and divide by 9 --> do for 2020 and 2021
+
 -----
 
 Other:
 
 https://www.fangraphs.com/leaders.aspx?pos=all&stats=pit&lg=all&qual=y&type=4&season=2021&month=0&season1=2021&ind=0&team=0&rost=0&age=0&filter=&players=0&startdate=2021-01-01&enddate=2021-12-31&sort=4,d
+
+
+
+# manual check:
+
+away pitcher:
+    LHP
+    2020 away woba: .313
+    2021 away woba: 0.16
+    last 14 - .388
+    ----
+    .941
+
+home pitcher: 
+    LHP
+    2020 home woba: .262
+    2021 home woba: .541
+    last 14 - 0.445
+    ---
+    1.518
+
+away lineup: 
+    chris taylor: .362 + .345 + .37 + (.567 * 1.5) + (.429 * 1.5) = 
+    Corey Seager: 
+

@@ -1,0 +1,354 @@
+[
+    {
+        "home": {
+            "team": "Mariners"
+        },
+        "away": {
+            "team": "Dodgers"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Marco Gonzales",
+                "throws": "LHP",
+                "combined_woba": 2.389555555555556
+            },
+            "away": {
+                "name": "Julio Urias",
+                "throws": "LHP",
+                "combined_woba": 1.7011666666666665
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 16.9155
+            },
+            "away": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 20.240499999999997
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Indians"
+        },
+        "away": {
+            "team": "White Sox"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Zach Plesac",
+                "throws": "RHP",
+                "combined_woba": 1.422
+            },
+            "away": {
+                "name": "Carlos Rodon",
+                "throws": "LHP",
+                "combined_woba": 1.595222222222222
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": NaN
+            },
+            "away": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 18.6825
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Athletics"
+        },
+        "away": {
+            "team": "Twins"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Sean Manaea",
+                "throws": "LHP",
+                "combined_woba": 1.9721666666666668
+            },
+            "away": {
+                "name": "Matt Shoemaker",
+                "throws": "RHP",
+                "combined_woba": 1.7739999999999998
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 18.945500000000003
+            },
+            "away": {
+                "lefties": 1,
+                "righties": 8,
+                "total_woba": 19.779
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Yankees"
+        },
+        "away": {
+            "team": "Braves"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Jameson Taillon",
+                "throws": "RHP",
+                "combined_woba": 2.0748333333333333
+            },
+            "away": {
+                "name": "Charlie Morton",
+                "throws": "RHP",
+                "combined_woba": 2.0661666666666667
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 18.4145
+            },
+            "away": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 21.716499999999996
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Reds"
+        },
+        "away": {
+            "team": "D-backs"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Luis Castillo",
+                "throws": "RHP",
+                "combined_woba": 2.0374999999999996
+            },
+            "away": {
+                "name": "Zac Gallen",
+                "throws": "RHP",
+                "combined_woba": 1.8374444444444444
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 20.5555
+            },
+            "away": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 18.6765
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Marlins"
+        },
+        "away": {
+            "team": "Orioles"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Nick Neidert",
+                "throws": "RHP",
+                "combined_woba": 2.546833333333333
+            },
+            "away": {
+                "name": "Matt Harvey",
+                "throws": "RHP",
+                "combined_woba": 2.466166666666667
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": 15.838000000000001
+            },
+            "away": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 16.734
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Phillies"
+        },
+        "away": {
+            "team": "Giants"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Zack Wheeler",
+                "throws": "RHP",
+                "combined_woba": 1.5645555555555555
+            },
+            "away": {
+                "name": "Logan Webb",
+                "throws": "RHP",
+                "combined_woba": 2.5821666666666667
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 18.143
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 17.9555
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Nationals"
+        },
+        "away": {
+            "team": "Cardinals"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Patrick Corbin",
+                "throws": "LHP",
+                "combined_woba": 3.419888888888889
+            },
+            "away": {
+                "name": "Adam Wainwright",
+                "throws": "RHP",
+                "combined_woba": 2.3596111111111115
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 20.953
+            },
+            "away": {
+                "lefties": 1,
+                "righties": 8,
+                "total_woba": 19.889000000000003
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Red Sox"
+        },
+        "away": {
+            "team": "Blue Jays"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Eduardo Rodriguez",
+                "throws": "LHP",
+                "combined_woba": 1.873333333333333
+            },
+            "away": {
+                "name": "Hyun Jin Ryu",
+                "throws": "LHP",
+                "combined_woba": 1.8599999999999999
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 0,
+                "righties": 9,
+                "total_woba": 18.7465
+            },
+            "away": {
+                "lefties": 1,
+                "righties": 8,
+                "total_woba": 16.497
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Cubs"
+        },
+        "away": {
+            "team": "Mets"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Jake Arrieta",
+                "throws": "RHP",
+                "combined_woba": 2.0549999999999997
+            },
+            "away": {
+                "name": "Taijuan Walker",
+                "throws": "RHP",
+                "combined_woba": 1.8962777777777777
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 17.5325
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 18.0815
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Angels"
+        },
+        "away": {
+            "team": "Rangers"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Shohei Ohtani",
+                "throws": "RHP",
+                "combined_woba": 2.439
+            },
+            "away": {
+                "name": "Jordan Lyles",
+                "throws": "RHP",
+                "combined_woba": 2.1631666666666667
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": NaN
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 18.541999999999998
+            }
+        }
+    }
+]

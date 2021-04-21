@@ -1,43 +1,57 @@
-def calculatePitcherHaWOBA(pitcher, home_away):
+def calculatePitcherSplitWOBA(pitcher, split):
     woba_2020 = .310
     woba_2021 = .310
     if pitcher['splits']:
-        if pitcher['splits']['2020 Splits'] and pitcher['splits']['2020 Splits'][home_away]:
-            woba_2020 = pitcher['splits']['2020 Splits'][home_away]['WOBA Against']
-        if pitcher['splits']['2021 Splits'] and pitcher['splits']['2021 Splits'][home_away]:
-            woba_2021 = pitcher['splits']['2021 Splits'][home_away]['WOBA Against']
+        if pitcher['splits']['2020 Splits'] and pitcher['splits']['2020 Splits'][split]:
+            woba_2020 = pitcher['splits']['2020 Splits'][split]['WOBA Against']
+        if pitcher['splits']['2021 Splits'] and pitcher['splits']['2021 Splits'][split]:
+            woba_2021 = pitcher['splits']['2021 Splits'][split]['WOBA Against']
 
     woba_total = (woba_2021 * 1.5) + woba_2020
     print(woba_total)
     return woba_total
 
 
-def comparePitchers(matchup):
+def comparePitchersNoRL(matchup):
     # print('comparePitchers method')
     # print(matchup['pitchers'])
     home_pitcher = matchup['pitchers']['home']
     away_pitcher = matchup['pitchers']['away']
 
     home_14_woba = .310
-    home_14_woba = home_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
-    away_14_woba = away_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
+    away_14_woba = .310
+
+    if home_pitcher['splits'] and home_pitcher['splits']['2021 Splits'] and home_pitcher['splits']['2021 Splits']["Last 14 Days"]:
+        home_14_woba = home_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
+    
+    if away_pitcher['splits'] and away_pitcher['splits']['2021 Splits'] and away_pitcher['splits']['2021 Splits']["Last 14 Days"]:
+        away_14_woba = away_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
 
     # print('home_14_woba ' + str(home_14_woba))
     # print('away_14_woba ' + str(away_14_woba))
 
-    home_woba = calculatePitcherHaWOBA(home_pitcher, 'Home')
-    away_woba = calculatePitcherHaWOBA(away_pitcher, 'Away')
+    home_woba = calculatePitcherSplitWOBA(home_pitcher, 'Home')
+    home_righty_woba = calculatePitcherSplitWOBA(home_pitcher, 'vs Righty')
+    home_lefty_woba = calculatePitcherSplitWOBA(home_pitcher, 'vs Lefty')
+
+    away_woba = calculatePitcherSplitWOBA(away_pitcher, 'Away')
+    away_righty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Righty')
+    away_lefty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Lefty')
 
     home_pitcher_done = {
         "name": home_pitcher['name'],
         "throws": home_pitcher['throws'],
-        "combined_woba": home_14_woba + home_woba
+        "ha_14_woba": home_14_woba + home_woba,
+        "righty_woba": home_righty_woba,
+        "lefty_woba": home_lefty_woba
     }
 
     away_pitcher_done = {
         "name": away_pitcher['name'],
         "throws": away_pitcher['throws'],
-        "combined_woba": away_14_woba + away_woba
+        "ha_14_woba": away_14_woba + away_woba,
+        "righty_woba": away_righty_woba,
+        "lefty_woba": away_lefty_woba
     }
 
     pitcher_totals = {
@@ -45,9 +59,22 @@ def comparePitchers(matchup):
         'away': away_pitcher_done,
     }
 
-    # print('home_pitcher_done ' + str(home_pitcher_done))
-    # print('away_pitcher_done ' + str(away_pitcher_done))
     return pitcher_totals
+
+def comparePitchersRL(pitcher, lineup):
+    print('lineup num_lefities ' + str(lineup['lefties']))
+    print('lineup num_righties ' + str(lineup['righties']))
+
+    rl_woba = ((lineup['lefties'] * pitcher['lefty_woba']) + (lineup['righties'] * pitcher['righty_woba'])) / 9
+    print(rl_woba)
+
+    final_pitcher = {
+        "name": pitcher["name"],
+        "throws": pitcher["throws"],
+        "combined_woba": rl_woba + pitcher["ha_14_woba"]
+    }
+
+    return final_pitcher
 
 
 def calculateBatterHaWOBA(batter, home_away):
@@ -133,6 +160,7 @@ def summarizeLineup(lineup, pitchers, pitcher_ha, batter_ha):
         total_woba = total_woba + batter_woba
         # break
         # total_rl_woba = total_rl_woba + rl_woba
+
     # print('lefties: ' + str(num_lefties))
     # print('num_righties: ' + str(num_righties))
     # print('total_woba: ' + str(total_woba))
@@ -149,7 +177,7 @@ def compareLineups(matchup, pitchers):
     away_lineup_done = summarizeLineup(
         matchup['lineups']['away'], pitchers, 'home', 'Away')
     home_lineup_done = summarizeLineup(
-        matchup['lineups']['away'], pitchers, 'away', 'Home')
+        matchup['lineups']['home'], pitchers, 'away', 'Home')
 
     lineup_totals = {
         'home': home_lineup_done,
@@ -159,8 +187,17 @@ def compareLineups(matchup, pitchers):
 
 
 def compareMatchup(matchup):
-    pitchers = comparePitchers(matchup)
-    lineups = compareLineups(matchup, pitchers)
+    pitchers_almost = comparePitchersNoRL(matchup)
+    lineups = compareLineups(matchup, pitchers_almost)
+
+    home_pitcher_done = comparePitchersRL(pitchers_almost['home'], lineups['away'])
+    away_pitcher_done = comparePitchersRL(pitchers_almost['away'], lineups['home'])
+
+
+    pitchers = {
+        "home": home_pitcher_done,
+        "away": away_pitcher_done
+    }
 
     # print(pitchers)
     # print(lineups)

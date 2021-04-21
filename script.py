@@ -15,7 +15,7 @@ def findWinners(data):
     final_list = []
     for matchup in data:
 
-        print(matchup)
+        # print(matchup)
         if matchup['pitchers'] and len(matchup['pitchers']) == 2 and matchup['pitchers']['away'] and matchup['lineups'] and matchup['lineups']['away'] and matchup['lineups']['home']:
             match = compareMatchup(matchup)
             final_list.append(match)
@@ -80,16 +80,21 @@ def main():
 
     # gathering
     # matchups = getTodaysGames(today)
-    # with open(f"{str(today)}.json", 'w') as fp:
+    # with open(f"{str(today)}-raw.json", 'w') as fp:
     #     json.dump(matchups, fp)
 
     # reading
-    f = open(f"{str(today)}.json",)  # Opening JSON file
+    f = open(f"{str(today)}-raw.json",)  # Opening JSON file
+    # f = open(f"2021-04-19.json",)  # Opening JSON file
     data = json.load(f)  # returns JSON object as a dictionary
     final = findWinners(data)
 
     print('done')
-    print(final)
+    # print(final)
+
+    # with open(f"2021-04-19-final.json", 'w') as fp:
+    with open(f"{str(today)}-final.json", 'w') as fp:
+        json.dump(final, fp)
 
 
 if __name__ == '__main__':
