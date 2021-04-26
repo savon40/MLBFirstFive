@@ -8,6 +8,9 @@ from lineup_utils import *
 from matchup_utils import *
 import json
 
+import smtplib # Import smtplib for the actual sending function
+from email.message import EmailMessage  # Import the email modules we'll need
+
 
 def findWinners(data):
     print('matchup method')
@@ -79,9 +82,9 @@ def main():
     today = datetime.date.today()
 
     # gathering
-    matchups = getTodaysGames(today)
-    with open(f"{str(today)}-raw.json", 'w') as fp:
-        json.dump(matchups, fp)
+    # matchups = getTodaysGames(today)
+    # with open(f"{str(today)}-raw.json", 'w') as fp:
+    #     json.dump(matchups, fp)
 
     # reading
     f = open(f"{str(today)}-raw.json",)  # Opening JSON file
@@ -89,12 +92,34 @@ def main():
     data = json.load(f)  # returns JSON object as a dictionary
     final = findWinners(data)
 
-    print('done')
+    print('results done')
     # print(final)
 
     # with open(f"2021-04-19-final.json", 'w') as fp:
-    with open(f"{str(today)}-final.json", 'w') as fp:
-        json.dump(final, fp)
+    # with open(f"{str(today)}-final.json", 'w') as fp:
+    #     json.dump(final, fp)
+
+
+    #email results
+    with open(f"{str(today)}-final.json", 'rb') as content_file:
+
+        msg = EmailMessage()
+
+        content = content_file.read()
+        msg.add_attachment(content, maintype='application', subtype='json', filename='results.json')
+
+        # msg.set_content(fp.read())
+
+        msg['Subject'] = f"Baseball Bets Script Result"
+        msg['From'] = "savon40@gmail.com"
+        msg['To'] = "savon40@gmail.com"
+
+        # Send the message via our own SMTP server.
+        s = smtplib.SMTP('smtp.gmail.com', 587)
+        s.send_message(msg)
+        s.quit()
+
+    print('email sent')
 
 
 if __name__ == '__main__':
