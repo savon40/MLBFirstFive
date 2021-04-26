@@ -47,15 +47,20 @@ so now we have the pitchers away / home and lefty / righty
 we can weight the WOBAs - because we have 2020 and 2021 --> maybe to start just do (2020 * 1) and (2021 * 1.5)
 
 so example so far:
+
     pitcher: 
         2020 Home WOBA + (2021 Home WOBA * 1.5)
         Last 14 Days WOBA --> just add this in as well
         (((2020 Lefty WOBA * num L) + (2020 Righty WOBA * num R)) / 9) + (((2021 Lefty WOBA * num L) + (2021 Righty WOBA * num R)) / 9) * 1.5
         add these
         can compare the two pitchers now - the lower one would be better 
+    
     batter:
         2020 Away WOBA + (2021 Away WOBA * 1.5)
         2020 vs Righty WOBA + (2021 Righty WOBA * 1.5)
+        last 14 days 
+
+
         - add this up for all players on the team and divide by 9 --> if a batter doesnt have these for whatever reason just give the average? 
         can compare the two lineups now - the higher would be better
 
@@ -120,4 +125,7 @@ Taylor Trammell:    .347 + (.347 x 1.5) + .233 + (.233 x 1.5) + .357
 
 
 
+-- pitch types
 
+37.8% (91.0)	46.0% (87.7)		16.2% (74.9)
+4.27 x .378 / 1.14  x .46 / 4.61 x .162 ==  2.88528 runs above average against this pitcher

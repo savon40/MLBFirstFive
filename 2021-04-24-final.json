@@ -1,0 +1,418 @@
+[
+    {
+        "home": {
+            "team": "Cardinals"
+        },
+        "away": {
+            "team": "Reds"
+        },
+        "pitchers": {
+            "home": {
+                "name": "John Gant",
+                "throws": "RHP",
+                "combined_woba": 2.3614444444444445
+            },
+            "away": {
+                "name": "Wade Miley",
+                "throws": "LHP",
+                "combined_woba": 1.6448888888888888
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 1,
+                "righties": 8,
+                "total_woba": 17.131
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 17.59
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Mets"
+        },
+        "away": {
+            "team": "Nationals"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Marcus Stroman",
+                "throws": "RHP",
+                "combined_woba": 1.5271666666666666
+            },
+            "away": {
+                "name": "Joe Ross",
+                "throws": "RHP",
+                "combined_woba": 2.1903333333333332
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 19.571499999999997
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 17.6235
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Astros"
+        },
+        "away": {
+            "team": "Angels"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Jake Odorizzi",
+                "throws": "RHP",
+                "combined_woba": 2.617277777777778
+            },
+            "away": {
+                "name": "Griffin Canning",
+                "throws": "RHP",
+                "combined_woba": 2.170611111111111
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 19.364
+            },
+            "away": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 17.375
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Rays"
+        },
+        "away": {
+            "team": "Blue Jays"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Brent Honeywell Jr.",
+                "throws": "RHP",
+                "combined_woba": 1.1892222222222224
+            },
+            "away": {
+                "name": "Robbie Ray",
+                "throws": "LHP",
+                "combined_woba": 2.491833333333333
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 18.4135
+            },
+            "away": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": 18.223
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Indians"
+        },
+        "away": {
+            "team": "Yankees"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Shane Bieber",
+                "throws": "RHP",
+                "combined_woba": 1.519388888888889
+            },
+            "away": {
+                "name": "Gerrit Cole",
+                "throws": "RHP",
+                "combined_woba": 1.3528333333333333
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 16.5145
+            },
+            "away": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": 19.5625
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Orioles"
+        },
+        "away": {
+            "team": "Athletics"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Wade LeBlanc",
+                "throws": "LHP",
+                "combined_woba": 1.7890000000000001
+            },
+            "away": {
+                "name": "Chris Bassitt",
+                "throws": "RHP",
+                "combined_woba": 1.9522222222222223
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 16.709
+            },
+            "away": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": 19.157499999999995
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "White Sox"
+        },
+        "away": {
+            "team": "Rangers"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Dallas Keuchel",
+                "throws": "LHP",
+                "combined_woba": 1.8468333333333333
+            },
+            "away": {
+                "name": "Kyle Gibson",
+                "throws": "RHP",
+                "combined_woba": 1.949
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 18.692
+            },
+            "away": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 17.247
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Rockies"
+        },
+        "away": {
+            "team": "Phillies"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Antonio Senzatela",
+                "throws": "RHP",
+                "combined_woba": 1.964722222222222
+            },
+            "away": {
+                "name": "Aaron Nola",
+                "throws": "RHP",
+                "combined_woba": 1.7743333333333333
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 3,
+                "righties": 6,
+                "total_woba": 16.648
+            },
+            "away": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 17.660999999999998
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Giants"
+        },
+        "away": {
+            "team": "Marlins"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Kevin Gausman",
+                "throws": "RHP",
+                "combined_woba": 1.9358333333333333
+            },
+            "away": {
+                "name": "Pablo Lopez",
+                "throws": "RHP",
+                "combined_woba": 2.4005
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 18.3775
+            },
+            "away": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 15.088999999999999
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Tigers"
+        },
+        "away": {
+            "team": "Royals"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Matthew Boyd",
+                "throws": "LHP",
+                "combined_woba": 1.948888888888889
+            },
+            "away": {
+                "name": "Brady Singer",
+                "throws": "RHP",
+                "combined_woba": 1.9293333333333336
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 18.098499999999998
+            },
+            "away": {
+                "lefties": 1,
+                "righties": 8,
+                "total_woba": 16.094
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Red Sox"
+        },
+        "away": {
+            "team": "Mariners"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Nathan Eovaldi",
+                "throws": "RHP",
+                "combined_woba": 1.8138333333333332
+            },
+            "away": {
+                "name": "Chris Flexen",
+                "throws": "RHP",
+                "combined_woba": 2.35
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 20.294500000000003
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 18.889
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Twins"
+        },
+        "away": {
+            "team": "Pirates"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Michael Pineda",
+                "throws": "RHP",
+                "combined_woba": 1.390222222222222
+            },
+            "away": {
+                "name": "Trevor Cahill",
+                "throws": "RHP",
+                "combined_woba": 2.316777777777778
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 17.633
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 15.308
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "Cubs"
+        },
+        "away": {
+            "team": "Brewers"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Adbert Alzolay",
+                "throws": "RHP",
+                "combined_woba": 1.8289444444444443
+            },
+            "away": {
+                "name": "Freddy Peralta",
+                "throws": "RHP",
+                "combined_woba": 1.8751666666666669
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 18.7815
+            },
+            "away": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 20.4635
+            }
+        }
+    }
+]

@@ -10,19 +10,23 @@ def calculateWOBA(row):
     # PA = AB + Walk + HBP + Sac Fly + Sac Hit?
     # I have: BB, HBP, doubles (2B), triples (3B), HR, AB, BB, IBB, SF, HBP
     # just need to calculate: Single
-    BB = 0 if row['BB'] is None else row['BB']
-    HBP = 0 if row['HBP'] is None else row['HBP']
-    Doubles = 0 if row['2B'] is None else row['2B']
-    Triples = 0 if row['3B'] is None else row['3B']
-    HR = 0 if row['HR'] is None else row['HR']
-    PA = 0 if row['PA'] is None else row['PA']
-    IBB = 0 if row['IBB'] is None else row['IBB']
-    H = 0 if row['H'] is None else row['H']
-    Singles = H - Doubles - Triples - HR
 
-    WOBA = round((BB + (0.728*HBP) + (0.883*Singles) + (1.238 *
-                 Doubles) + (1.558*Triples) + (1.979*HR)) / (PA - IBB), 3)
-    return WOBA
+    if row['PA'] is not None and row['PA'] > 0:
+        BB = 0 if row['BB'] is None else row['BB']
+        HBP = 0 if row['HBP'] is None else row['HBP']
+        Doubles = 0 if row['2B'] is None else row['2B']
+        Triples = 0 if row['3B'] is None else row['3B']
+        HR = 0 if row['HR'] is None else row['HR']
+        PA = 0 if row['PA'] is None else row['PA']
+        IBB = 0 if row['IBB'] is None else row['IBB']
+        H = 0 if row['H'] is None else row['H']
+        Singles = H - Doubles - Triples - HR
+
+        WOBA = round((BB + (0.728*HBP) + (0.883*Singles) + (1.238 *
+                    Doubles) + (1.558*Triples) + (1.979*HR)) / (PA - IBB), 3)
+        return WOBA
+    else: 
+        return .310
 
 
 def getSplits(player_code, year):

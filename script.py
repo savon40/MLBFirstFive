@@ -79,9 +79,9 @@ def main():
     today = datetime.date.today()
 
     # gathering
-    # matchups = getTodaysGames(today)
-    # with open(f"{str(today)}-raw.json", 'w') as fp:
-    #     json.dump(matchups, fp)
+    matchups = getTodaysGames(today)
+    with open(f"{str(today)}-raw.json", 'w') as fp:
+        json.dump(matchups, fp)
 
     # reading
     f = open(f"{str(today)}-raw.json",)  # Opening JSON file
