@@ -85,6 +85,7 @@ def getTodaysGames(today):
 def main():
     print(datetime.date.today())
     today = datetime.date.today()
+    # today = '2021-04-30'
 
     # gathering
     matchups = getTodaysGames(today)
