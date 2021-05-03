@@ -1,1 +1,66 @@
-[{"home": {"team": "Twins"}, "away": {"team": "Royals"}, "pitchers": {"home": {"name": "Matt Shoemaker", "throws": "RHP", "combined_woba": 2.5408333333333335}, "away": {"name": "Danny Duffy", "throws": "LHP", "combined_woba": 1.8108333333333333}}, "lineups": {"home": {"lefties": 2, "righties": 7, "total_woba": 18.610999999999997}, "away": {"lefties": 4, "righties": 5, "total_woba": 17.9845}}}, {"home": {"team": "White Sox"}, "away": {"team": "Indians"}, "pitchers": {"home": {"name": "Lance Lynn", "throws": "RHP", "combined_woba": 2.064}, "away": {"name": "Triston McKenzie", "throws": "RHP", "combined_woba": 2.7830555555555554}}, "lineups": {"home": {"lefties": 5, "righties": 4, "total_woba": 18.011999999999997}, "away": {"lefties": 6, "righties": 3, "total_woba": 14.6585}}}]
+[
+    {
+        "home": {
+            "team": "Twins"
+        },
+        "away": {
+            "team": "Royals"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Matt Shoemaker",
+                "throws": "RHP",
+                "combined_woba": 2.5408333333333335
+            },
+            "away": {
+                "name": "Danny Duffy",
+                "throws": "LHP",
+                "combined_woba": 1.8108333333333333
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 2,
+                "righties": 7,
+                "total_woba": 18.610999999999997
+            },
+            "away": {
+                "lefties": 4,
+                "righties": 5,
+                "total_woba": 17.9845
+            }
+        }
+    },
+    {
+        "home": {
+            "team": "White Sox"
+        },
+        "away": {
+            "team": "Indians"
+        },
+        "pitchers": {
+            "home": {
+                "name": "Lance Lynn",
+                "throws": "RHP",
+                "combined_woba": 2.064
+            },
+            "away": {
+                "name": "Triston McKenzie",
+                "throws": "RHP",
+                "combined_woba": 2.7830555555555554
+            }
+        },
+        "lineups": {
+            "home": {
+                "lefties": 5,
+                "righties": 4,
+                "total_woba": 18.011999999999997
+            },
+            "away": {
+                "lefties": 6,
+                "righties": 3,
+                "total_woba": 14.6585
+            }
+        }
+    }
+]
