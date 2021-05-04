@@ -1,0 +1,25 @@
+FA = fastball
+FF = four-seam fastball
+FT = two-seam fastball
+FC = fastball (cutter)
+FS / SI / SF = fastball (sinker, split-fingered)
+SL = slider
+CH = changeup
+CB / CU = curveball
+KC = knuckle-curve
+KN = knuckleball
+EP = eephus
+
+SO FAR WHAT I GOT: 
+
+take the pitchers percentage of throwing each pitch --> from the 'Pitch Type' table
+take the pitchers avg amount of runs given up per 100 pitches of each pitch and multiply it by the percent that pitch is thrown
+ex:
+     Jacob deGrom:   FB% 62.6, SL% 25.8, CH% 11.6
+    runs given up:      1.86,     3.10,     4.38
+            total:      (1.86 x .626) + (3.10 x .258) + (4.38 x .116) = 2.47 runs per 100 pitches
+
+take the batters avg amount of runs produced per that pitch
+ex:
+        Mike Trout:    wFB/C: 4.94, wSL/C: 2.88, wCH/C: 5.88
+             total:    (4.94 x .626) + (2.88 x .258) + (5.88 x .116) = 4.517 runs per 100 pitches against Jacob deGrom? 

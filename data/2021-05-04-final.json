@@ -1,1 +1,1 @@
-[]
+[{"home": {"team": "Cubs"}, "away": {"team": "Dodgers"}, "pitchers": {"home": {"name": "Kyle Hendricks", "throws": "RHP", "combined_woba": 2.877944444444444}, "away": {"name": "Clayton Kershaw", "throws": "LHP", "combined_woba": 1.7649444444444444}}, "lineups": {"home": {"lefties": 1, "righties": 8, "total_woba": 17.0845}, "away": {"lefties": 4, "righties": 5, "total_woba": 20.1235}}}]
