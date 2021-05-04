@@ -23,3 +23,15 @@ take the batters avg amount of runs produced per that pitch
 ex:
         Mike Trout:    wFB/C: 4.94, wSL/C: 2.88, wCH/C: 5.88
              total:    (4.94 x .626) + (2.88 x .258) + (5.88 x .116) = 4.517 runs per 100 pitches against Jacob deGrom? 
+             
+             
+        total:    (-3.49 x .626) + (2.80 x .258) + (1.69 x .116) = -1.2663 runs per 100 pitches against Jacob deGrom? 
+
+do this calculation for each batter.. add it all up and divide by 9 to get the lineup expected runs against Jacob DeGrom pitch mix. 
+Take the pitcher 
+
+
+Jordan Montgomery
+Dylan Cease
+Justice Sheffield
+
