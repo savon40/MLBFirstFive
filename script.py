@@ -7,6 +7,7 @@ from pitcher_utils import *
 from lineup_utils import *
 from matchup_utils import *
 from csv_utils import *
+from fangraph_utils import *
 import json
 
 import smtplib  # Import smtplib for the actual sending function
@@ -89,50 +90,53 @@ def main():
     today = datetime.date.today()
     # today = '2021-04-30'
 
-    # GATHER DATA AND LOAD INTO RAW JSON
-    matchups = getTodaysGames(today)
-    with open(f"data/{str(today)}-raw.json", 'w') as fp:
-        json.dump(matchups, fp)
+    #CREATE CSV FROM FANGRAPH
+    getFanGraphData()
 
-    # READ FROM RAW JSON AND FIND WINNERS, LOAD INTO FINAL JSON
-    f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
-    # f = open(f"2021-04-19.json",)  # Opening JSON file
-    data = json.load(f)  # returns JSON object as a dictionary
-    final = findWinners(data)
-    # # with open(f"2021-04-19-final.json", 'w') as fp:
-    with open(f"data/{str(today)}-final.json", 'w') as fp:
-        json.dump(final, fp)
+    # GATHER DATA FROM MLB AND BASEBALL REFERENCE, AND LOAD INTO RAW JSON
+    # matchups = getTodaysGames(today)
+    # with open(f"data/{str(today)}-raw.json", 'w') as fp:
+    #     json.dump(matchups, fp)
 
-    # READ FROM FINAL JSON AND CREATE CSV
-    f = open(f"data/{str(today)}-final.json",)
-    data = json.load(f)
-    df = create_csv(data)
-    df.to_csv(f"data/{str(today)}.csv")
+    # # READ FROM RAW JSON AND FIND WINNERS, LOAD INTO FINAL JSON
+    # f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
+    # # f = open(f"2021-04-19.json",)  # Opening JSON file
+    # data = json.load(f)  # returns JSON object as a dictionary
+    # final = findWinners(data)
+    # # # with open(f"2021-04-19-final.json", 'w') as fp:
+    # with open(f"data/{str(today)}-final.json", 'w') as fp:
+    #     json.dump(final, fp)
 
-    # EMAIL RESULTS FROM CSV
-    with open(f"data/{str(today)}.csv", 'rb') as content_file:
+    # # READ FROM FINAL JSON AND CREATE CSV
+    # f = open(f"data/{str(today)}-final.json",)
+    # data = json.load(f)
+    # df = create_csv(data)
+    # df.to_csv(f"data/{str(today)}.csv")
 
-        sender_address = "seavon.sf@gmail.com"
-        sender_password = "Duecourse_1"
+    # # EMAIL RESULTS FROM CSV
+    # with open(f"data/{str(today)}.csv", 'rb') as content_file:
 
-        receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
+    #     sender_address = "seavon.sf@gmail.com"
+    #     sender_password = "Duecourse_1"
 
-        msg = EmailMessage()
+    #     receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
 
-        content = content_file.read()
-        msg.add_attachment(content, maintype='application',
-                           subtype='json', filename='results.csv')
+    #     msg = EmailMessage()
 
-        msg['Subject'] = f"Baseball Bets Script Result"
-        msg['From'] = sender_address
-        msg['To'] = ', '.join(receiver_address)
+    #     content = content_file.read()
+    #     msg.add_attachment(content, maintype='application',
+    #                        subtype='json', filename='results.csv')
 
-        # Send the message via our own SMTP server.
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(sender_address, sender_password)
-        s.send_message(msg)
-        s.quit()
+    #     msg['Subject'] = f"Baseball Bets Script Result"
+    #     msg['From'] = sender_address
+    #     msg['To'] = ', '.join(receiver_address)
+
+    #     # Send the message via our own SMTP server.
+    #     s = smtplib.SMTP('smtp.gmail.com', 587)
+    #     s.starttls()
+    #     s.login(sender_address, sender_password)
+    #     s.send_message(msg)
+    #     s.quit()
 
     print('email sent')
 
