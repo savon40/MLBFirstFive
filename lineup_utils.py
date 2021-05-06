@@ -2,6 +2,7 @@ import re
 import pandas as pd  # dataframe
 from bs4 import BeautifulSoup, Comment  # web scraper
 import requests  # to make an HTTP request
+from fangraph_utils import *
 
 
 def calculateWOBA(row):

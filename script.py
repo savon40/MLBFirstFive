@@ -33,8 +33,6 @@ def findWinners(data):
 
 def getTodaysGames(today):
 
-    # letter_url = "https://www.pro-football-reference.com/players/{today}/"
-    # need to change to todays date on actual script
     starting_lineups_url = "https://www.mlb.com/starting-lineups/{today}"
     res = requests.get(starting_lineups_url)
     soup = BS(res.content, 'html.parser')
@@ -77,8 +75,7 @@ def getTodaysGames(today):
             "lineups": lineups
         }
         final_matchups.append(matchup)
-
-        # break
+        break
         # i = i + 1
         # exit()
 
@@ -91,21 +88,21 @@ def main():
     # today = '2021-04-30'
 
     #CREATE CSV FROM FANGRAPH
-    getFanGraphData()
+    # getFanGraphData()
 
-    # GATHER DATA FROM MLB AND BASEBALL REFERENCE, AND LOAD INTO RAW JSON
+    # # # GATHER DATA FROM MLB AND BASEBALL REFERENCE, AND LOAD INTO RAW JSON
     # matchups = getTodaysGames(today)
     # with open(f"data/{str(today)}-raw.json", 'w') as fp:
     #     json.dump(matchups, fp)
 
     # # READ FROM RAW JSON AND FIND WINNERS, LOAD INTO FINAL JSON
-    # f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
+    f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
     # # f = open(f"2021-04-19.json",)  # Opening JSON file
-    # data = json.load(f)  # returns JSON object as a dictionary
-    # final = findWinners(data)
+    data = json.load(f)  # returns JSON object as a dictionary
+    final = findWinners(data)
     # # # with open(f"2021-04-19-final.json", 'w') as fp:
-    # with open(f"data/{str(today)}-final.json", 'w') as fp:
-    #     json.dump(final, fp)
+    with open(f"data/{str(today)}-final.json", 'w') as fp:
+        json.dump(final, fp)
 
     # # READ FROM FINAL JSON AND CREATE CSV
     # f = open(f"data/{str(today)}-final.json",)
