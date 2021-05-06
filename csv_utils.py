@@ -18,6 +18,13 @@ def create_csv(data):
         else:
             pitcher_difference = f"{str(round(home_pitch_woba - away_pitch_woba, 3))} Away"
 
+        home_pitch_rs = matchup['pitchers']['home']['runs_saved']
+        away_pitch_rs = matchup['pitchers']['away']['runs_saved']
+
+        print('rs things')
+        print(home_pitch_rs)
+        print(away_pitch_rs)
+
         home_lineup_woba = round(matchup['lineups']['home']['total_woba'], 3)
         away_lineup_woba = round(matchup['lineups']['away']['total_woba'], 3)
 
@@ -26,19 +33,29 @@ def create_csv(data):
         else:
             lineup_difference = f"{str(round(away_lineup_woba - home_lineup_woba, 3))} Away"
 
+        home_lineup_raa = round(matchup['lineups']['home']['total_raa'] / 9, 3)
+        away_lineup_raa = round(matchup['lineups']['away']['total_raa'] / 9, 3)
+
         row = {
-            'Home Team': matchup['home']['team'],
-            'Away Team': matchup['away']['team'],
-            'HP': matchup['pitchers']['home']['name'],
-            'HP Throws': matchup['pitchers']['home']['throws'],
+            'Home Team': f"{matchup['home']['team']} - {matchup['pitchers']['home']['name']} - {matchup['pitchers']['home']['throws']}",
+            'Away Team': f"{matchup['away']['team']} - {matchup['pitchers']['away']['name']} - {matchup['pitchers']['away']['throws']}",
+            # 'Away Team': f"{matchup['away']['team']}",
+            # 'HP': matchup['pitchers']['home']['name'],
+            # 'HP Throws': matchup['pitchers']['home']['throws'],
             'HP WOBA Against': home_pitch_woba,
-            'AP': matchup['pitchers']['away']['name'],
-            'AP Throws': matchup['pitchers']['away']['throws'],
+            'HP Runs Saved': round(home_pitch_rs, 3),
+            # 'AP': matchup['pitchers']['away']['name'],
+            # 'AP Throws': matchup['pitchers']['away']['throws'],
             'AP WOBA Against': away_pitch_woba,
+            'AP Runs Saved': round(away_pitch_rs, 3),
             'HL WOBA': home_lineup_woba,
+            'HL RAA': home_lineup_raa,
             'AL WOBA': away_lineup_woba,
-            'WOBA Pitcher Difference': pitcher_difference,
-            'WOBA Lineup Difference': lineup_difference,
+            'AL RAA': away_lineup_raa,
+            'WOBA Pitcher Diff': pitcher_difference,
+            'WOBA Lineup Diff': lineup_difference,
+            'Home RAA vs AP': home_lineup_raa - away_pitch_rs,
+            'Away RAA vs HP': away_lineup_raa - home_pitch_rs 
         }
         # print(row)
         matchup_items.append(row)

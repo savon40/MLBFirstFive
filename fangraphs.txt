@@ -17,7 +17,7 @@ take the pitchers avg amount of runs given up per 100 pitches of each pitch and 
 ex:
      Jacob deGrom:   FB% 62.6, SL% 25.8, CH% 11.6
     runs given up:      1.86,     3.10,     4.38
-            total:      (1.86 x .626) + (3.10 x .258) + (4.38 x .116) = 2.47 runs per 100 pitches
+            total:      (1.86 x .626) + (3.10 x .258) + (4.38 x .116) = 2.47 runs saved per 100 pitches
 
 take the batters avg amount of runs produced per that pitch
 ex:

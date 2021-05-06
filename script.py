@@ -96,19 +96,20 @@ def main():
     #     json.dump(matchups, fp)
 
     # # READ FROM RAW JSON AND FIND WINNERS, LOAD INTO FINAL JSON
-    f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
-    # # f = open(f"2021-04-19.json",)  # Opening JSON file
-    data = json.load(f)  # returns JSON object as a dictionary
-    final = findWinners(data)
-    # # # with open(f"2021-04-19-final.json", 'w') as fp:
-    with open(f"data/{str(today)}-final.json", 'w') as fp:
-        json.dump(final, fp)
+    # f = open(f"data/{str(today)}-raw.json",)  # Opening JSON file
+    # # # f = open(f"2021-04-19.json",)  # Opening JSON file
+    # data = json.load(f)  # returns JSON object as a dictionary
+    # final = findWinners(data)
+    # # with open(f"2021-05-05-final.json", 'w') as fp:
+    # with open(f"data/{str(today)}-final.json", 'w') as fp:
+    #     json.dump(final, fp)
 
     # # READ FROM FINAL JSON AND CREATE CSV
+    f = open(f"data/2021-05-05-final.json",)
     # f = open(f"data/{str(today)}-final.json",)
-    # data = json.load(f)
-    # df = create_csv(data)
-    # df.to_csv(f"data/{str(today)}.csv")
+    data = json.load(f)
+    df = create_csv(data)
+    df.to_csv(f"data/{str(today)}.csv")
 
     # # EMAIL RESULTS FROM CSV
     # with open(f"data/{str(today)}.csv", 'rb') as content_file:
