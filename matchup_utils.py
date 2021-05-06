@@ -1,3 +1,5 @@
+from fangraph_utils import *
+
 def calculatePitcherSplitWOBA(pitcher, split):
     woba_2020 = .400
     woba_2021 = .400
@@ -43,7 +45,8 @@ def comparePitchersNoRL(matchup):
         "throws": home_pitcher['throws'],
         "ha_14_woba": (home_14_woba * 2) + home_woba,
         "righty_woba": home_righty_woba,
-        "lefty_woba": home_lefty_woba
+        "lefty_woba": home_lefty_woba,
+        "pitch_info": home_pitcher['pitch_info']
     }
 
     away_pitcher_done = {
@@ -51,7 +54,8 @@ def comparePitchersNoRL(matchup):
         "throws": away_pitcher['throws'],
         "ha_14_woba": (away_14_woba * 2) + away_woba,
         "righty_woba": away_righty_woba,
-        "lefty_woba": away_lefty_woba
+        "lefty_woba": away_lefty_woba,
+        "pitch_info": away_pitcher['pitch_info']
     }
 
     pitcher_totals = {
@@ -71,7 +75,8 @@ def comparePitchersRL(pitcher, lineup):
     final_pitcher = {
         "name": pitcher["name"],
         "throws": pitcher["throws"],
-        "combined_woba": rl_woba + pitcher["ha_14_woba"]
+        "combined_woba": rl_woba + pitcher["ha_14_woba"],
+        "runs_saved": pitcher['pitch_info']['RBA']
     }
 
     return final_pitcher
@@ -140,6 +145,7 @@ def summarizeLineup(lineup, pitchers, pitcher_ha, batter_ha):
     num_lefties = 0
     num_righties = 0
     total_woba = 0
+    total_raa = 0
 
     for batter in lineup:
 
@@ -157,7 +163,13 @@ def summarizeLineup(lineup, pitchers, pitcher_ha, batter_ha):
         batter_woba = getBatterTotalWoba(
             batter, pitchers[pitcher_ha]['throws'], batter_ha)
 
+        print(batter['name'])
+        print(pitchers[pitcher_ha]['name'])
+        batter_raa = getBatterFangraphInfo(batter['name'], pitchers[pitcher_ha])
+        print(f"batter raa: {batter_raa}")
+
         total_woba = total_woba + batter_woba
+        total_raa = total_raa + batter_raa
         # break
         # total_rl_woba = total_rl_woba + rl_woba
 
@@ -168,7 +180,8 @@ def summarizeLineup(lineup, pitchers, pitcher_ha, batter_ha):
     lineup_done = {
         'lefties': num_lefties,
         'righties': num_righties,
-        'total_woba': total_woba
+        'total_woba': total_woba,
+        'total_raa': total_raa
     }
     return lineup_done
 
