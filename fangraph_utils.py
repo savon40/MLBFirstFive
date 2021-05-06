@@ -135,7 +135,10 @@ def getBatterFangraphInfo(batter, pitcher):
     # gets the pitch_info from the pitcher and the name from the batter - from there we do calculation per fangraphs.txt
     batter_value_df = pd.read_csv("data/fangraph/batter_pitch_value.csv")
 
-    if batter in batter_value_df.values:
+    print(pitcher['pitch_info'])
+    print(len(pitcher['pitch_info']))
+
+    if batter in batter_value_df.values and len(pitcher['pitch_info']) != 0:
         batter_value_row = batter_value_df.loc[batter_value_df['Name'] == batter]
         # ,Name,Team,wFB,wSL,wCT,wCB,wCH,wSF,wKN,wFB/C,wSL/C,wCT/C,wCB/C,wCH/C,wSF/C,/C
         wFB = batter_value_row.loc[batter_value_row['Name']

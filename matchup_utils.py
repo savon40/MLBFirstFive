@@ -72,11 +72,18 @@ def comparePitchersRL(pitcher, lineup):
     rl_woba = ((lineup['lefties'] * pitcher['lefty_woba']) + (lineup['righties'] * pitcher['righty_woba'])) / 9
     print(rl_woba)
 
+    rba = None
+
+    if len(pitcher['pitch_info']) != 0:
+        rba = pitcher['pitch_info']['RBA']
+    else:
+        rba = 0
+
     final_pitcher = {
         "name": pitcher["name"],
         "throws": pitcher["throws"],
         "combined_woba": rl_woba + pitcher["ha_14_woba"],
-        "runs_saved": pitcher['pitch_info']['RBA']
+        "runs_saved": rba
     }
 
     return final_pitcher
