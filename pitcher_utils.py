@@ -172,7 +172,7 @@ def getBaseballReferenceInfo(name):
         player_name = player_name.strip()
 
         if player_name == name:
-            splits['2020 Splits'] = getSplits(player_code, '2020')
+            # splits['2020 Splits'] = getSplits(player_code, '2020')
             splits['2021 Splits'] = getSplits(player_code, '2021')
 
     return splits

@@ -1,15 +1,15 @@
 from fangraph_utils import *
 
 def calculatePitcherSplitWOBA(pitcher, split):
-    woba_2020 = .400
+    # woba_2020 = .400
     woba_2021 = .400
     if pitcher['splits']:
-        if pitcher['splits']['2020 Splits'] and pitcher['splits']['2020 Splits'][split]:
-            woba_2020 = pitcher['splits']['2020 Splits'][split]['WOBA Against']
+        # if pitcher['splits']['2020 Splits'] and pitcher['splits']['2020 Splits'][split]:
+        #     woba_2020 = pitcher['splits']['2020 Splits'][split]['WOBA Against']
         if pitcher['splits']['2021 Splits'] and pitcher['splits']['2021 Splits'][split]:
             woba_2021 = pitcher['splits']['2021 Splits'][split]['WOBA Against']
 
-    woba_total = (woba_2021 * 1.5) + woba_2020
+    woba_total = woba_2021 #(woba_2021 * 1.5) + woba_2020
     print(woba_total)
     return woba_total
 
@@ -93,15 +93,15 @@ def calculateBatterHaWOBA(batter, home_away):
     # print(home_away)
     # print(batter)
 
-    woba_2020 = .310
+    # woba_2020 = .310
     woba_2021 = .310
     if batter['splits']:
-        if batter['splits']['2020 Splits'] and batter['splits']['2020 Splits'][home_away]:
-            woba_2020 = batter['splits']['2020 Splits'][home_away]['WOBA']
+        # if batter['splits']['2020 Splits'] and batter['splits']['2020 Splits'][home_away]:
+        #     woba_2020 = batter['splits']['2020 Splits'][home_away]['WOBA']
         if batter['splits']['2021 Splits'] and batter['splits']['2021 Splits'][home_away]:
             woba_2021 = batter['splits']['2021 Splits'][home_away]['WOBA']
 
-    woba_total = (woba_2021 * 1.5) + woba_2020
+    woba_total = woba_2021 #(woba_2021 * 1.5) + woba_2020
     # print(woba_total)
     return woba_total
 
@@ -111,15 +111,15 @@ def calculateBatterRlWOBA(batter, pitcher_throws):
 
     throw = 'vs Righty' if pitcher_throws == 'RHP' else 'vs Lefty'
 
-    woba_2020 = .310
+    # woba_2020 = .310
     woba_2021 = .310
     if batter['splits']:
-        if batter['splits']['2020 Splits'] and batter['splits']['2020 Splits'][throw]:
-            woba_2020 = batter['splits']['2020 Splits'][throw]['WOBA']
+        # if batter['splits']['2020 Splits'] and batter['splits']['2020 Splits'][throw]:
+        #     woba_2020 = batter['splits']['2020 Splits'][throw]['WOBA']
         if batter['splits']['2021 Splits'] and batter['splits']['2021 Splits'][throw]:
             woba_2021 = batter['splits']['2021 Splits'][throw]['WOBA']
 
-    woba_total = (woba_2021 * 1.5) + woba_2020
+    woba_total = woba_2021 #(woba_2021 * 1.5) + woba_2020
     # print(woba_total)
     return woba_total
 
