@@ -21,13 +21,19 @@ def comparePitchersNoRL(matchup):
     away_pitcher = matchup['pitchers']['away']
 
     home_14_woba = .400
+    home_14_stats = None
     away_14_woba = .400
+    away_14_stats = None
 
     if home_pitcher['splits'] and home_pitcher['splits']['2021 Splits'] and home_pitcher['splits']['2021 Splits']["Last 14 Days"]:
-        home_14_woba = home_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
+        last_14_row = home_pitcher['splits']['2021 Splits']["Last 14 Days"]
+        home_14_woba = last_14_row['WOBA Against']
+        home_14_stats = f"Games: {last_14_row['Games Pitched']}, AB: {last_14_row['Plate Appearances']}, H: {last_14_row['H']}, R: {last_14_row['R']}"
     
     if away_pitcher['splits'] and away_pitcher['splits']['2021 Splits'] and away_pitcher['splits']['2021 Splits']["Last 14 Days"]:
-        away_14_woba = away_pitcher['splits']['2021 Splits']["Last 14 Days"]['WOBA Against']
+        last_14_row = away_pitcher['splits']['2021 Splits']["Last 14 Days"]
+        away_14_woba = last_14_row['WOBA Against']
+        away_14_stats = f"Games: {last_14_row['Games Pitched']}, AB: {last_14_row['Plate Appearances']}, H: {last_14_row['H']}, R: {last_14_row['R']}"
 
     # print('home_14_woba ' + str(home_14_woba))
     # print('away_14_woba ' + str(away_14_woba))
@@ -40,13 +46,14 @@ def comparePitchersNoRL(matchup):
     away_righty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Righty')
     away_lefty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Lefty')
 
-    home_stats = f"{home_pitcher['wins']}-{home_pitcher['losses']}"
-    away_stats = f"{away_pitcher['wins']}-{away_pitcher['losses']}"
+    home_stats = f"{home_pitcher['wins']}-{home_pitcher['losses']}, {home_pitcher['era']}, {home_pitcher['so']}"
+    away_stats = f"{away_pitcher['wins']}-{away_pitcher['losses']}, {away_pitcher['era']}, {away_pitcher['so']}"
 
     home_pitcher_done = {
         "name": home_pitcher['name'],
         "throws": home_pitcher['throws'],
         "stats": home_stats,
+        "last 14 stats": home_14_stats,
         "ha_14_woba": (home_14_woba * 2) + home_woba,
         "righty_woba": home_righty_woba,
         "lefty_woba": home_lefty_woba,
@@ -57,6 +64,7 @@ def comparePitchersNoRL(matchup):
         "name": away_pitcher['name'],
         "throws": away_pitcher['throws'],
         "stats": away_stats,
+        "last 14 stats": away_14_stats,
         "ha_14_woba": (away_14_woba * 2) + away_woba,
         "righty_woba": away_righty_woba,
         "lefty_woba": away_lefty_woba,
