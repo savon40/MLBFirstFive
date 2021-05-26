@@ -96,6 +96,7 @@ def comparePitchersRL(pitcher, lineup):
         "name": pitcher["name"],
         "throws": pitcher["throws"],
         "stats": pitcher["stats"],
+        "last 14 stats": pitcher["last 14 stats"],
         "combined_woba": rl_woba + pitcher["ha_14_woba"],
         "runs_saved": rba
     }
