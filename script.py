@@ -42,41 +42,41 @@ def getTodaysGames(today):
     i = 1
     for matchup_div in matchup_divs:
 
-        if i == 1 or i == 2:
-            away_div = matchup_div.find(
-                "span", {"class": "starting-lineups__team-name--away"})
-            home_div = matchup_div.find(
-                "span", {"class": "starting-lineups__team-name--home"})
-            home_a_tag = home_div.find('a', href=True)
-            away_a_tag = away_div.find('a', href=True)
+        # if i == 1 or i == 2:
+        away_div = matchup_div.find(
+            "span", {"class": "starting-lineups__team-name--away"})
+        home_div = matchup_div.find(
+            "span", {"class": "starting-lineups__team-name--home"})
+        home_a_tag = home_div.find('a', href=True)
+        away_a_tag = away_div.find('a', href=True)
 
-            # time
-            time_div = matchup_div.find(
-                "div", {"class": "starting-lineups__game-date-time"})
-            time = time_div.find("time")
+        # time
+        time_div = matchup_div.find(
+            "div", {"class": "starting-lineups__game-date-time"})
+        time = time_div.find("time")
 
-            home = {
-                "team": home_a_tag.contents[0].strip(),
-            }
-            away = {
-                "team": away_a_tag.contents[0].strip(),
-            }
+        home = {
+            "team": home_a_tag.contents[0].strip(),
+        }
+        away = {
+            "team": away_a_tag.contents[0].strip(),
+        }
 
-            pitcher_divs = matchup_div.find_all(
-                "div", {"class": "starting-lineups__pitchers"})
-            pitchers = getPitcher(pitcher_divs)
-            lineups = getLineups(matchup_div)
+        pitcher_divs = matchup_div.find_all(
+            "div", {"class": "starting-lineups__pitchers"})
+        pitchers = getPitcher(pitcher_divs)
+        lineups = getLineups(matchup_div)
 
-            matchup = {
-                "datetime": time.get('datetime'),
-                "home": home,
-                "away": away,
-                "pitchers": pitchers,
-                "lineups": lineups
-            }
-            final_matchups.append(matchup)
+        matchup = {
+            "datetime": time.get('datetime'),
+            "home": home,
+            "away": away,
+            "pitchers": pitchers,
+            "lineups": lineups
+        }
+        final_matchups.append(matchup)
         # break
-        i = i + 1
+        # i = i + 1
         # exit()
 
     return final_matchups
@@ -88,7 +88,7 @@ def main():
     # today = '2021-05-11'
 
     #CREATE CSV FROM FANGRAPH
-    # getFanGraphData()
+    getFanGraphData()
 
     # # # GATHER DATA FROM MLB AND BASEBALL REFERENCE, AND LOAD INTO RAW JSON
     matchups = getTodaysGames(today)
@@ -112,29 +112,29 @@ def main():
     df.to_csv(f"data/{str(today)}.csv")
 
     # EMAIL RESULTS FROM CSV
-    # with open(f"data/{str(today)}.csv", 'rb') as content_file:
+    with open(f"data/{str(today)}.csv", 'rb') as content_file:
 
-    #     sender_address = "seavon.sf@gmail.com"
-    #     sender_password = "Duecourse_1"
+        sender_address = "seavon.sf@gmail.com"
+        sender_password = "Duecourse_1"
 
-    #     receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
+        receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
 
-    #     msg = EmailMessage()
+        msg = EmailMessage()
 
-    #     content = content_file.read()
-    #     msg.add_attachment(content, maintype='application',
-    #                        subtype='json', filename='results.csv')
+        content = content_file.read()
+        msg.add_attachment(content, maintype='application',
+                           subtype='json', filename='results.csv')
 
-    #     msg['Subject'] = f"Baseball Bets Script Result"
-    #     msg['From'] = sender_address
-    #     msg['To'] = ', '.join(receiver_address)
+        msg['Subject'] = f"Baseball Bets Script Result"
+        msg['From'] = sender_address
+        msg['To'] = ', '.join(receiver_address)
 
-    #     # Send the message via our own SMTP server.
-    #     s = smtplib.SMTP('smtp.gmail.com', 587)
-    #     s.starttls()
-    #     s.login(sender_address, sender_password)
-    #     s.send_message(msg)
-    #     s.quit()
+        # Send the message via our own SMTP server.
+        s = smtplib.SMTP('smtp.gmail.com', 587)
+        s.starttls()
+        s.login(sender_address, sender_password)
+        s.send_message(msg)
+        s.quit()
 
     print('email sent')
 
