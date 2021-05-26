@@ -40,9 +40,13 @@ def comparePitchersNoRL(matchup):
     away_righty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Righty')
     away_lefty_woba = calculatePitcherSplitWOBA(away_pitcher, 'vs Lefty')
 
+    home_stats = f"{home_pitcher['wins']}-{home_pitcher['losses']}"
+    away_stats = f"{away_pitcher['wins']}-{away_pitcher['losses']}"
+
     home_pitcher_done = {
         "name": home_pitcher['name'],
         "throws": home_pitcher['throws'],
+        "stats": home_stats,
         "ha_14_woba": (home_14_woba * 2) + home_woba,
         "righty_woba": home_righty_woba,
         "lefty_woba": home_lefty_woba,
@@ -52,6 +56,7 @@ def comparePitchersNoRL(matchup):
     away_pitcher_done = {
         "name": away_pitcher['name'],
         "throws": away_pitcher['throws'],
+        "stats": away_stats,
         "ha_14_woba": (away_14_woba * 2) + away_woba,
         "righty_woba": away_righty_woba,
         "lefty_woba": away_lefty_woba,
@@ -82,6 +87,7 @@ def comparePitchersRL(pitcher, lineup):
     final_pitcher = {
         "name": pitcher["name"],
         "throws": pitcher["throws"],
+        "stats": pitcher["stats"],
         "combined_woba": rl_woba + pitcher["ha_14_woba"],
         "runs_saved": rba
     }

@@ -37,8 +37,8 @@ def create_csv(data):
         away_lineup_raa = round(matchup['lineups']['away']['total_raa'] / 9, 3)
 
         row = {
-            'Home Team': f"{matchup['home']['team']} - {matchup['pitchers']['home']['name']} - {matchup['pitchers']['home']['throws']}",
-            'Away Team': f"{matchup['away']['team']} - {matchup['pitchers']['away']['name']} - {matchup['pitchers']['away']['throws']}",
+            'Home Team': f"{matchup['home']['team']} - {matchup['pitchers']['home']['name']} - {matchup['pitchers']['home']['throws']} - {matchup['pitchers']['home']['stats']}",
+            'Away Team': f"{matchup['away']['team']} - {matchup['pitchers']['away']['name']} - {matchup['pitchers']['away']['throws']} - {matchup['pitchers']['away']['stats']}",
             # 'Away Team': f"{matchup['away']['team']}",
             # 'HP': matchup['pitchers']['home']['name'],
             # 'HP Throws': matchup['pitchers']['home']['throws'],
