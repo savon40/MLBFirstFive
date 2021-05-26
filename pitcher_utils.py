@@ -74,6 +74,8 @@ def getSplits(player_code, year):
                 year_stats['Last 14 Days']['Plate Appearances'] = row['PA']
                 year_stats['Last 14 Days']['WOBA Against'] = calculateWOBA(row)
                 year_stats['Last 14 Days']['Games Pitched'] = row['G']
+                year_stats['Last 14 Days']['H'] = row['H']
+                year_stats['Last 14 Days']['R'] = row['R']
 
     # totals table
     if total_extra_table:

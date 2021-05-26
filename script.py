@@ -88,7 +88,7 @@ def main():
     # today = '2021-05-11'
 
     #CREATE CSV FROM FANGRAPH
-    getFanGraphData()
+    # getFanGraphData()
 
     # # # GATHER DATA FROM MLB AND BASEBALL REFERENCE, AND LOAD INTO RAW JSON
     matchups = getTodaysGames(today)
@@ -112,29 +112,29 @@ def main():
     df.to_csv(f"data/{str(today)}.csv")
 
     # EMAIL RESULTS FROM CSV
-    with open(f"data/{str(today)}.csv", 'rb') as content_file:
+    # with open(f"data/{str(today)}.csv", 'rb') as content_file:
 
-        sender_address = "seavon.sf@gmail.com"
-        sender_password = "Duecourse_1"
+    #     sender_address = "seavon.sf@gmail.com"
+    #     sender_password = "Duecourse_1"
 
-        receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
+    #     receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
 
-        msg = EmailMessage()
+    #     msg = EmailMessage()
 
-        content = content_file.read()
-        msg.add_attachment(content, maintype='application',
-                           subtype='json', filename='results.csv')
+    #     content = content_file.read()
+    #     msg.add_attachment(content, maintype='application',
+    #                        subtype='json', filename='results.csv')
 
-        msg['Subject'] = f"Baseball Bets Script Result"
-        msg['From'] = sender_address
-        msg['To'] = ', '.join(receiver_address)
+    #     msg['Subject'] = f"Baseball Bets Script Result"
+    #     msg['From'] = sender_address
+    #     msg['To'] = ', '.join(receiver_address)
 
-        # Send the message via our own SMTP server.
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(sender_address, sender_password)
-        s.send_message(msg)
-        s.quit()
+    #     # Send the message via our own SMTP server.
+    #     s = smtplib.SMTP('smtp.gmail.com', 587)
+    #     s.starttls()
+    #     s.login(sender_address, sender_password)
+    #     s.send_message(msg)
+    #     s.quit()
 
     print('email sent')
 
