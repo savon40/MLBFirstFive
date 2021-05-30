@@ -140,28 +140,31 @@ def getBatterFangraphInfo(batter, pitcher):
 
     if batter in batter_value_df.values and len(pitcher['pitch_info']) != 0:
         batter_value_row = batter_value_df.loc[batter_value_df['Name'] == batter]
-        # ,Name,Team,wFB,wSL,wCT,wCB,wCH,wSF,wKN,wFB/C,wSL/C,wCT/C,wCB/C,wCH/C,wSF/C,/C
-        wFB = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wFB/C'].item()
-        wSL = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wSL/C'].item()
-        wCT = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wCT/C'].item()
-        wCB = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wCB/C'].item()
-        wCH = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wCH/C'].item()
-        wSF = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wSF/C'].item()
-        wKN = batter_value_row.loc[batter_value_row['Name']
-                                   == batter, 'wKN/C'].item()
+        if len(batter_value_row) == 1:
+            # ,Name,Team,wFB,wSL,wCT,wCB,wCH,wSF,wKN,wFB/C,wSL/C,wCT/C,wCB/C,wCH/C,wSF/C,/C
+            wFB = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wFB/C'].item()
+            wSL = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wSL/C'].item()
+            wCT = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wCT/C'].item()
+            wCB = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wCB/C'].item()
+            wCH = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wCH/C'].item()
+            wSF = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wSF/C'].item()
+            wKN = batter_value_row.loc[batter_value_row['Name']
+                                    == batter, 'wKN/C'].item()
 
-        # 'pitch_info': {'RAA': -0.45162, 'FB%': '32.5', 'SL%': '0', 'CT%': '33.7', 'CB%': '11.2', 'CH%': '22.6', 'SF%': '0', 'KN%': '0'}}
-        # print(pitcher)
-        # fb = 
-        raa = (float(pitcher['pitch_info']['FB%']) / 100 * float(wFB)) + (float(pitcher['pitch_info']['SL%']) / 100 * float(wSL)) + (float(pitcher['pitch_info']['CT%']) / 100 * float(wCT)) + (float(pitcher['pitch_info']
-                                                                                                                                                                                              ['CB%']) / 100 * float(wCB)) + (float(pitcher['pitch_info']['CH%']) / 100 * float(wCH)) + (float(pitcher['pitch_info']['SF%']) / 100 * float(wSF)) + (float(pitcher['pitch_info']['KN%']) / 100 * float(wKN))
-        # raa = fb
-        return raa
+            # 'pitch_info': {'RAA': -0.45162, 'FB%': '32.5', 'SL%': '0', 'CT%': '33.7', 'CB%': '11.2', 'CH%': '22.6', 'SF%': '0', 'KN%': '0'}}
+            # print(pitcher)
+            # fb = 
+            raa = (float(pitcher['pitch_info']['FB%']) / 100 * float(wFB)) + (float(pitcher['pitch_info']['SL%']) / 100 * float(wSL)) + (float(pitcher['pitch_info']['CT%']) / 100 * float(wCT)) + (float(pitcher['pitch_info']
+                                                                                                                                                                                                ['CB%']) / 100 * float(wCB)) + (float(pitcher['pitch_info']['CH%']) / 100 * float(wCH)) + (float(pitcher['pitch_info']['SF%']) / 100 * float(wSF)) + (float(pitcher['pitch_info']['KN%']) / 100 * float(wKN))
+            # raa = fb
+            return raa
+        else:
+            return 0
     else:
         return 0
