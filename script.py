@@ -3,13 +3,16 @@ from bs4 import BeautifulSoup as BS  # web scraper
 import requests  # to make an HTTP request
 from sys import argv
 import datetime
+import json
+import dateutil.parser
+import os
+import shutil
+
 from pitcher_utils import *
 from lineup_utils import *
 from matchup_utils import *
 from csv_utils import *
 from fangraph_utils import *
-import json
-import dateutil.parser
 
 import smtplib  # Import smtplib for the actual sending function
 from email.message import EmailMessage  # Import the email modules we'll need
@@ -87,6 +90,14 @@ def getTodaysGames(today):
 
 
 def main():
+
+    # remove the data folder to start fresh - this way we dont store too much
+    shutil.rmtree('data')
+
+    #create the folder
+    os.mkdir('data')
+    os.mkdir('data/fangraph')
+
     print(datetime.date.today())
     today = datetime.date.today()
     # today = '2021-05-11'
@@ -115,32 +126,37 @@ def main():
     df = create_csv(data)
     df.to_csv(f"data/{str(today)}.csv")
 
-    # EMAIL RESULTS FROM CSV
-    with open(f"data/{str(today)}.csv", 'rb') as content_file:
+    if not df.empty:
 
-        sender_address = "seavon.sf@gmail.com"
-        sender_password = "Duecourse_1"
+        # EMAIL RESULTS FROM CSV
+        with open(f"data/{str(today)}.csv", 'rb') as content_file:
 
-        receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
+            sender_address = "seavon.sf@gmail.com"
+            sender_password = "Duecourse_1"
 
-        msg = EmailMessage()
+            receiver_address = ["savon40@gmail.com"]
+            # receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
 
-        content = content_file.read()
-        msg.add_attachment(content, maintype='application',
-                           subtype='json', filename='results.csv')
+            msg = EmailMessage()
 
-        msg['Subject'] = f"Baseball Bets Script Result"
-        msg['From'] = sender_address
-        msg['To'] = ', '.join(receiver_address)
+            content = content_file.read()
+            msg.add_attachment(content, maintype='application',
+                            subtype='json', filename='results.csv')
 
-        # Send the message via our own SMTP server.
-        s = smtplib.SMTP('smtp.gmail.com', 587)
-        s.starttls()
-        s.login(sender_address, sender_password)
-        s.send_message(msg)
-        s.quit()
+            msg['Subject'] = f"Baseball Bets Script Result"
+            msg['From'] = sender_address
+            msg['To'] = ', '.join(receiver_address)
 
-    print('email sent')
+            # Send the message via our own SMTP server.
+            s = smtplib.SMTP('smtp.gmail.com', 587)
+            s.starttls()
+            s.login(sender_address, sender_password)
+            s.send_message(msg)
+            s.quit()
+
+        print('email sent')
+    else:
+        print('dataframe empty')
 
 
 if __name__ == '__main__':
