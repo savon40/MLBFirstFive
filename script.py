@@ -134,8 +134,8 @@ def main():
             sender_address = "seavon.sf@gmail.com"
             sender_password = "Duecourse_1"
 
-            receiver_address = ["savon40@gmail.com"]
-            # receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
+            # receiver_address = ["savon40@gmail.com"]
+            receiver_address = ["savon40@gmail.com", "jackcanaley@gmail.com"]
 
             msg = EmailMessage()
 
