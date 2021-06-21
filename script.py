@@ -9,6 +9,7 @@ from matchup_utils import *
 from csv_utils import *
 from fangraph_utils import *
 import json
+import dateutil.parser
 
 import smtplib  # Import smtplib for the actual sending function
 from email.message import EmailMessage  # Import the email modules we'll need
@@ -54,27 +55,30 @@ def getTodaysGames(today):
         time_div = matchup_div.find(
             "div", {"class": "starting-lineups__game-date-time"})
         time = time_div.find("time")
+        if time.has_attr('datetime'):
+            matchup_datetime = dateutil.parser.parse(time['datetime']).replace(tzinfo=None)
+            if matchup_datetime >= datetime.datetime.now():
 
-        home = {
-            "team": home_a_tag.contents[0].strip(),
-        }
-        away = {
-            "team": away_a_tag.contents[0].strip(),
-        }
+                home = {
+                    "team": home_a_tag.contents[0].strip(),
+                }
+                away = {
+                    "team": away_a_tag.contents[0].strip(),
+                }
 
-        pitcher_divs = matchup_div.find_all(
-            "div", {"class": "starting-lineups__pitchers"})
-        pitchers = getPitcher(pitcher_divs)
-        lineups = getLineups(matchup_div)
+                pitcher_divs = matchup_div.find_all(
+                    "div", {"class": "starting-lineups__pitchers"})
+                pitchers = getPitcher(pitcher_divs)
+                lineups = getLineups(matchup_div)
 
-        matchup = {
-            "datetime": time.get('datetime'),
-            "home": home,
-            "away": away,
-            "pitchers": pitchers,
-            "lineups": lineups
-        }
-        final_matchups.append(matchup)
+                matchup = {
+                    "datetime": time.get('datetime'),
+                    "home": home,
+                    "away": away,
+                    "pitchers": pitchers,
+                    "lineups": lineups
+                }
+                final_matchups.append(matchup)
         # break
         # i = i + 1
         # exit()
